@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://m.yingdian.com/live.html?id=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>直播间</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0,
+                                   maximum-scale=1.0,
+                                   user-scalable=no,
+                                   minimal-ui">
+    <link rel="shortcut icon" href="http://m.yingdian.com/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon-precomposed" href="http://m.yingdian.com/img/favicon.png">
+    <link rel="stylesheet" href="http://m.yingdian.com/img/直播间_files/live.css">
+</head>
+
+<body class=" app-ios app-ios-9 app-loaded">
+    <!-- 载入特效 -->
+    <div class="loading" style="display: none;">
+        <div class="loading-bg">
+            <div class="loading-m"></div>
+        </div>
+    </div>
+    <div id="global-tips"></div><div class="app-page" data-page="live">
+        <div class="app-topbar">
+            <a class="app-button left" href="javascript:history.go(-1)" data-clickable-class="active" style="-webkit-tap-highlight-color: rgba(255, 255, 255, 0);"></a>
+            <div class="app-title">映店看车</div>
+        </div>
+        <div class="app-content live-content app-scrollable" id="live-content" style="height: 523px; overflow-x: hidden; overflow-y: scroll;">
+            <div class="live-room">
+                <video poster="http://m.yingdian.com/img/live-1.jpeg" class="blur"></video>
+                <div class="control">
+                    <i id="full-screen"></i>
+                </div>
+            </div>
+            <div class="loading-border req-loading hide">
+                <div class="loading-mask"></div>
+                <div class="main">
+                    <span class="img"><img src="http://m.yingdian.com/img/直播间_files/user-1.jpg"></span>
+                    <p>
+                        <strong>等待对方开通直播</strong>
+                        <label>请稍后...</label>
+                    </p>
+                </div>
+            </div>
+            <div class="loading-border live-loading hide">
+                <div class="loading-mask"></div>
+                <div class="main">
+                    <span class="preloader preloader-white"></span>
+                    <p>加载中请稍后</p>
+                </div>
+            </div>
+            <div class="header living">
+                <div class="left">
+                    <div class="logo"></div>
+                    <p>
+                        <strong>广州安骅雪弗兰</strong>
+                        <label>15人观看</label>
+                    </p>
+                </div>
+                <div class="right">
+                    <i id="close-live"></i>
+                    <i id="share-live"></i>
+                </div>
+            </div>
+            <div class="messages hide">
+                <ul>
+                    <li>
+                        <p class="msg-in">张先生进入直播间 </p>
+                    </li>
+                    <li>
+                        <p class="msg-sys">系统消息：欢迎您来到佛山雪弗兰分店直播间，你有任何关于看车、买车的问题都可以向主播进行提问。</p>
+                    </li>
+                    <li>
+                        <p class="msg-common">
+                            <strong>观众1</strong>
+                            <label>送出一个<img class="gift" src="http://m.yingdian.com/img/直播间_files/gift-3.png"></label>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="msg-common">
+                            <strong>观众2</strong>
+                            <label>克鲁兹现在有现车吗？</label>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="msg-common">
+                            <strong>观众3</strong>
+                            <label>领取了优惠券</label>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="msg-master">
+                            <strong>主播</strong>
+                            <label><img src="http://m.yingdian.com/img/直播间_files/temp-3.jpg"></label>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div id="actions-border" class="hide">
+                <div class="actions">
+                    <i id="send-gift"></i>
+                    <i id="more-info"></i>
+                    <i id="fav-live"></i>
+                </div>
+                <div class="ask-border">
+                    <span id="btn-ask">一键提问</span>
+                    <div class="input">
+                        <input type="text" placeholder="对主播提问">
+                    </div>
+                </div>
+                <div class="ask-list">
+                    <div class="buttons-tab">
+                        <span class="active">看车</span>
+                        <span>试驾</span>
+                        <span>售后</span>
+                        <span>提车</span>
+                        <span>保险/金融</span>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab active">
+                            <ul>
+                                <li>我想看外观</li>
+                                <li>我想看内饰</li>
+                                <li>我想了解动力</li>
+                                <li>我想了解操控如何</li>
+                                <li>我想了解安全配置</li>
+                            </ul>
+                        </div>
+                        <div class="tab">
+                            <ul>
+                                <li>我想看外观</li>
+                                <li>我想看内饰</li>
+                                <li>我想了解动力</li>
+                                <li>我想了解操控如何</li>
+                                <li>我想了解安全配置</li>
+                            </ul>
+                        </div>
+                        <div class="tab">
+                            <ul>
+                                <li>我想看外观</li>
+                                <li>我想看内饰</li>
+                                <li>我想了解动力</li>
+                                <li>我想了解操控如何</li>
+                                <li>我想了解安全配置</li>
+                            </ul>
+                        </div>
+                        <div class="tab">
+                            <ul>
+                                <li>我想看外观</li>
+                                <li>我想看内饰</li>
+                                <li>我想了解动力</li>
+                                <li>我想了解操控如何</li>
+                                <li>我想了解安全配置</li>
+                            </ul>
+                        </div>
+                        <div class="tab">
+                            <ul>
+                                <li>我想看外观</li>
+                                <li>我想看内饰</li>
+                                <li>我想了解动力</li>
+                                <li>我想了解操控如何</li>
+                                <li>我想了解安全配置</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="share-border" class="hide">
+                <div class="share-item">
+                    <i class="wechat"></i>
+                    <label>微信</label>
+                </div>
+                <div class="share-item">
+                    <i class="friend"></i>
+                    <label>朋友圈</label>
+                </div>
+                <div class="share-item">
+                    <i class="webo"></i>
+                    <label>微博</label>
+                </div>
+                <div class="share-item">
+                    <i class="qq"></i>
+                    <label>QQ</label>
+                </div>
+                <div class="share-item">
+                    <i class="qzone"></i>
+                    <label>QQ空间</label>
+                </div>
+                <div class="share-item">
+                    <i class="sms"></i>
+                    <label>短信</label>
+                </div>
+                <div class="share-item">
+                    <i class="copy"></i>
+                    <label>复制链接</label>
+                </div>
+            </div>
+            <div id="gift-border" class="hide">
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-1.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-2.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-3.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-4.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-5.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-6.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-7.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+                <div class="gift-item">
+                    <span class="img">
+                        <img src="http://m.yingdian.com/img/直播间_files/gift-8.png">
+                    </span>
+                    <strong>666</strong>
+                    <label>¥1.00</label>
+                </div>
+            </div>
+            <div id="more-border" class="hide">
+                <div class="buttons-tab">
+                    <span class="active">活动介绍</span>
+                    <span>优惠</span>
+                </div>
+                <div class="tabs">
+                    <div class="tab active">
+                        <div class="act-info">
+                            <div class="img"><img src="http://m.yingdian.com/img/直播间_files/temp-1.jpg"></div>
+                            <div class="info">
+                                <div class="status">
+                                    <span>预约中</span>
+                                    <label>600人已预约</label>
+                                </div>
+                                <p>
+                                    <span>开始时间</span> 07月21日10:00
+                                    <br>
+                                    <span>结束时间</span> 07月21日10:00
+                                </p>
+                            </div>
+                            <div class="car">
+                                <span>参与车型</span> 东风日产楼兰
+                            </div>
+                            <div class="intro">
+                                <strong>活动简介</strong>
+                                <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="discount-info">
+                            <div class="img"><img src="http://m.yingdian.com/img/直播间_files/temp-2.jpg"></div>
+                            <div class="title">优惠主题名称优惠主题名称优惠主题名称</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" id="get-coupons" class="hide">领取优惠券</a>
+            <div id="coupons-border" class="hide">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <span class="button">
+                                <label>距离开始还有</label>
+                                <strong>10分钟</strong>
+                            </span>
+                            <p>
+                                <strong>活动优惠券</strong>
+                                <span><em>¥</em>1000</span>
+                            </p>
+                        </div>
+                        <div class="info">
+                            <span>有效期：2017/12/1-2017/12/31</span>
+                            <label>剩余10张</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span class="button receive-button">
+                                <span>立即领取</span>
+                            </span>
+                            <p>
+                                <strong>活动优惠券</strong>
+                                <span><em>¥</em>1000</span>
+                            </p>
+                        </div>
+                        <div class="info">
+                            <span>有效期：2017/12/1-2017/12/31</span>
+                            <label>剩余10张</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="pay-border" class="hide">
+                <div>
+                    <div class="pay-info">
+                        <span class="title">购买礼物</span>
+                        <span class="img"><img src="http://m.yingdian.com/img/直播间_files/gift-6.png"></span>
+                    </div>
+                    <div class="pay-info">
+                        <span class="title">实付金额</span>
+                        <span class="money">2.0</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pay-item">
+                        <span class="pay-wechat">
+                            <i></i>
+                        </span>
+                        <span class="pay-alipay selected">
+                            <i></i>
+                        </span>
+                    </div>
+                    <div id="pay-confirm">确认支付</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>
+        <script src="http://m.yingdian.com/img/直播间_files/jweixin-1.0.0.js"></script>
+        <script src="http://m.yingdian.com/img/直播间_files/live.js"></script></div><div id="chrome_websiteIP" class="chrome_websiteIP_right">127.0.0.1</div><script type="text/javascript" charset="utf-8" src="http://127.0.0.1:8132/livereload.js"></script></body></html>

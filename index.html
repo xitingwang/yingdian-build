@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>映店</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0,
+                                   maximum-scale=1.0,
+                                   user-scalable=no,
+                                   minimal-ui">
+    <link rel="shortcut icon" href="http://m.yingdian.com/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon-precomposed" href="http://m.yingdian.com/img/favicon.png">
+    <link rel="stylesheet" href="http://m.yingdian.com/css/index.css">
+</head>
+
+<body>
+    <!-- 载入特效 -->
+    <div class="loading">
+        <div class="loading-bg">
+            <div class="loading-m"></div>
+        </div>
+    </div>
+    <div class="app-page index-page" data-page="index">
+        <div class="app-topbar">
+            <div id="sel-city" class="app-button" data-target="city">广州</div>
+            <div id="link-login" class="app-button" data-target="login"></div>
+            <div class="search-border">
+                <input type="text" placeholder="输入品牌/4S店" class="app-button" data-target="search" />
+            </div>
+        </div>
+        <div class="app-content index-content" id="index-content">
+            <div class="banner">
+                <div class="banner-imgs" style="width: 300%;">
+                    <div class="img app-button" data-target="shop" data-target-args='{"id":1}'><img src="http://m.yingdian.com/img/temp-1.jpg" /></div>
+                    <div class="img app-button" data-target="shop" data-target-args='{"id":1}'><img src="http://m.yingdian.com/img/temp-2.jpg" /></div>
+                    <div class="img app-button" data-target="shop" data-target-args='{"id":1}'><img src="http://m.yingdian.com/img/temp-3.jpg" /></div>
+                </div>
+                <div class="banner-switch">
+                    <i class="on"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+            <div class="brand-list">
+                <ul>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/chevrolet.png" /></div>
+                            <span>雪弗兰</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/mazda.png" /></div>
+                            <span>长安马自达</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/nissan.png" /></div>
+                            <span>东风日产</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/citroen.png" /></div>
+                            <span>东风雪铁龙</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/ford.png" /></div>
+                            <span>福特</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/buick.png" /></div>
+                            <span>别克</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/vw.png" /></div>
+                            <span>一汽大众</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/toyota.png" /></div>
+                            <span>丰田</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/greatwall.png" /></div>
+                            <span>长城</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                            <div class="img"><img src="http://m.yingdian.com/img/logo/faw.png" /></div>
+                            <span>一汽</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="brand-more">
+                    <div class="line"></div>
+                    <a href="javascript:;" id="more-brand" class="app-button" data-target="brand">查看更多品牌</a>
+                </div>
+            </div>
+            <div class="fire-shops">
+                <h2><span class="fire-icons">人气4S店</span></h2>
+                <ul class="fire-list">
+                    <li>
+                        <a href="shop.html?id=1">
+                            <div class="img"><img src="http://m.yingdian.com/img/temp-1.jpg" /></div>
+                            <div class="info">
+                                <strong>广州南菱别克4S店</strong><br />
+                                <span>地址：广州市白云大道北1395号（白云堡立交北）</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html?id=1">
+                            <div class="img"><img src="http://m.yingdian.com/img/temp-2.jpg" /></div>
+                            <div class="info">
+                                <strong>广州南菱别克4S店</strong><br />
+                                <span>地址：广州市白云大道北1395号（白云堡立交北）</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="play-back">
+                <h2><span class="play-icons">精彩回顾</span></h2>
+                <ul class="fire-list">
+                    <li>
+                        <a href="shop.html?id=1">
+                            <div class="img"><img src="http://m.yingdian.com/img/temp-1.jpg" /><span class="play"></span></div>
+                            <div class="info">
+                                <strong>广州南菱别克4S店</strong><br />
+                                <span>地址：广州市白云大道北1395号（白云堡立交北）</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html?id=1">
+                            <div class="img"><img src="http://m.yingdian.com/img/temp-2.jpg" /><span class="play"></span></div>
+                            <div class="info">
+                                <strong>广州南菱别克4S店</strong><br />
+                                <span>地址：广州市白云大道北1395号（白云堡立交北）</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copy-right">
+                Copyright &copy; 电声营销 版权所有
+            </div>
+        </div>
+    </div>
+    <div class="app-page" data-page="brand">
+        <div class="app-topbar">
+            <div class="app-button left" data-back></div>
+            <div class="app-title">品牌列表</div>
+        </div>
+        <div class="app-content brand-content" id="brand-content">
+            <ul class="brand-list">
+                <li class="noliving" data-target="shop" data-target-args='{"id":1}'>
+                    <div class="img"><img src="http://m.yingdian.com/img/logo/buick.png" /></div>
+                    <p>别克</p>
+                </li>
+                <li class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                    <div class="img"><img src="http://m.yingdian.com/img/logo/faw.png" /></div>
+                    <p>大众</p>
+                </li>
+                <li class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                    <div class="img"><img src="http://m.yingdian.com/img/logo/chevrolet.png" /></div>
+                    <p>雪弗兰</p>
+                </li>
+                <li class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                    <div class="img"><img src="http://m.yingdian.com/img/logo/ford.png" /></div>
+                    <p>福特</p>
+                </li>
+                <li class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                    <div class="img"><img src="http://m.yingdian.com/img/logo/mazda.png" /></div>
+                    <p>马自达</p>
+                </li>
+                <li class="app-button" data-target="shop" data-target-args='{"id":1}'>
+                    <div class="img"><img src="http://m.yingdian.com/img/logo/toyota.png" /></div>
+                    <p>丰田</p>
+                </li>
+            </ul>
+            <div class="tips">
+                更多品牌陆续开通中
+            </div>
+        </div>
+    </div>
+    <div class="app-page" data-page="shop">
+        <div class="app-topbar">
+            <div class="app-button left" data-back></div>
+            <div class="app-title" id="brand-name">雪弗兰</div>
+        </div>
+        <div class="app-content shop-content" id="shop-content">
+            <ul>
+                <li>
+                    <a href="shop.html?id=1">
+                        <span>150m</span>
+                        <p>
+                            <strong>雪弗兰黄埔大道店</strong><br />
+                            <label>广州天河区黄埔大道196号</label>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html?id=1">
+                        <span>150m</span>
+                        <p>
+                            <strong>雪弗兰黄埔大道店</strong><br />
+                            <label>广州天河区黄埔大道196号</label>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html?id=1">
+                        <span>150m</span>
+                        <p>
+                            <strong>雪弗兰黄埔大道店</strong><br />
+                            <label>广州天河区黄埔大道196号</label>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="app-page" data-page="city">
+        <div class="app-topbar">
+            <div class="app-button left" data-back></div>
+            <div class="app-title">选择城市</div>
+        </div>
+        <div class="app-content city-content" id="city-content">
+            <h3>当前城市</h3>
+            <ul>
+                <li>广州</li>
+            </ul>
+            <h3>开通的城市</h3>
+            <ul>
+                <li>北京</li>
+                <li>上海</li>
+                <li>广州</li>
+                <li>深圳</li>
+                <li>北京</li>
+                <li>上海</li>
+                <li>广州</li>
+                <li>深圳</li>
+                <li>广州</li>
+                <li>深圳</li>
+            </ul>
+            <div class="tips">
+                <label>目前已开通4个城市，更多城市正在开通中...</label>
+            </div>
+        </div>
+    </div>
+    <div class="app-page" data-page="search">
+        <div class="app-topbar">
+            <div class="app-button left" data-back></div>
+            <div class="app-title">搜索</div>
+        </div>
+        <div class="app-content search-content" id="search-content">
+            <div class="search-border">
+                <a href="javascript:;" id="search-shop">搜索</a>
+                <div class="search-input">
+                    <input type="text" placeholder="输入品牌/4S店" />
+                </div>
+            </div>
+            <div class="empty">
+                <div class="icon icon-search"></div>
+                <p>暂时找不到数据</p>
+            </div>
+            <div class="search-list">
+                <ul>
+                    <li>
+                        <a href="shop.html?id=1">
+                            <span>150m</span>
+                            <p>
+                                <strong>雪弗兰黄埔大道店</strong><br />
+                                <label>广州天河区黄埔大道196号</label>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html?id=1">
+                            <span>150m</span>
+                            <p>
+                                <strong>雪弗兰黄埔大道店</strong><br />
+                                <label>广州天河区黄埔大道196号</label>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html?id=1">
+                            <span>150m</span>
+                            <p>
+                                <strong>雪弗兰黄埔大道店</strong><br />
+                                <label>广州天河区黄埔大道196号</label>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="app-page login-page" data-page="login">
+        <div class="login-mask"></div>
+        <div class="app-topbar">
+            <div class="app-button left" data-back></div>
+            <div class="app-title">登录</div>
+        </div>
+        <div class="app-content login-content" id="login-content">
+            <div class="login-phone">
+                <input type="tel" placeholder="请输入手机号码" id="login-phone" />
+            </div>
+            <div class="login-validate">
+                <a href="javascript:;" id="get-validate">获取验证码</a>
+                <div>
+                    <input type="text" placeholder="请输入验证码" id="login-validate" />
+                </div>
+            </div>
+            <div class="login-name">
+                <input type="text" placeholder="请输入姓名" id="login-name" />
+            </div>
+            <div class="login-item">
+                <a href="javascript:;" id="login-btn">登录</a>
+            </div>
+            <div class="login-item">
+                <label>登录即代表阅读并同意服务条款</label>
+            </div>
+        </div>
+    </div>
+    <div class="app-page" data-page="loginlive">
+        <div class="app-topbar">
+            <div class="app-button left" data-back></div>
+            <div class="app-title">登录并选择直播信息</div>
+        </div>
+        <div class="app-content" id="loginlive-content">
+            <div class="login-input">
+                <input type="tel" placeholder="请输入手机号码" id="loginlive-phone" />
+            </div>
+            <div class="loginlive-validate">
+                <a href="javascript:;" id="get-live-validate">获取验证码</a>
+                <p>
+                    <input type="text" placeholder="请输入验证码" id="loginlive-validate" />
+                </p>
+            </div>
+            <div class="login-input">
+                <input type="text" placeholder="请输入姓名" id="loginlive-name" />
+            </div>
+            <div class="login-select">
+                <select class="select" id="loginlive-province">
+                    <option value="">请选择省份</option>
+                </select>
+                <select class="select" id="loginlive-city">
+                    <option value="">请选择地区</option>
+                </select>
+            </div>
+            <div class="login-select">
+                <select class="select" id="loginlive-shop">
+                    <option value="">请选择专营店</option>
+                </select>
+            </div>
+            <div class="login-item">
+                <a href="javascript:;" id="loginlive-btn">登录</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://m.yingdian.com/js/index.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://127.0.0.1:8132/livereload.js"></script></body>
+
+</html>
