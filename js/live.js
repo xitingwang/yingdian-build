@@ -3287,7 +3287,7 @@ App._Navigation = function(i, l, o, g, u, p, k, d) {
          */
         json: function(url, data, success, fail, type) {
             if (url.indexOf('http://') == -1) {
-                url = 'http://s.yingdian.com' + url;
+                url = 'http://test.instore.com.cn' + url;
             }
             return this.getdata(url, data, success, fail, type, 'json');
         },
@@ -3296,7 +3296,7 @@ App._Navigation = function(i, l, o, g, u, p, k, d) {
          */
         jsonp: function(url, data, success, fail, type) {
             if (url.indexOf('http://') == -1) {
-                url = 'http://s.yingdian.com' + url;
+                url = 'http://test.instore.com.cn' + url;
             }
             return this.getdata(url, data, success, fail, type, 'jsonp');
         },

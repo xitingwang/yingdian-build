@@ -945,7 +945,7 @@ input.app-input {
   
   .app-topbar .app-button.left {
       height: 100%;
-      background-image: url(http://m.yingdian.com/img/icon/back-black.png);
+      background-image: url(http://test.instore.com.cn/img/icon/back-black.png);
       background-size: auto 0.75rem;
       display: block;
   }
@@ -970,7 +970,7 @@ input.app-input {
   
   .male,
   .female {
-      background: url(http://m.yingdian.com/img/icon/male.png) no-repeat right center;
+      background: url(http://test.instore.com.cn/img/icon/male.png) no-repeat right center;
       background-size: 0.7rem auto;
       padding-right: 0.8rem;
       display: inline-block;
@@ -979,7 +979,7 @@ input.app-input {
   }
   
   .female {
-      background-image: url(http://m.yingdian.com/img/icon/female.png);
+      background-image: url(http://test.instore.com.cn/img/icon/female.png);
   }
   
   .stars {
@@ -991,7 +991,7 @@ input.app-input {
   }
   
   .stars i {
-      background: url(http://m.yingdian.com/img/icon/star.png) repeat-x left center;
+      background: url(http://test.instore.com.cn/img/icon/star.png) repeat-x left center;
       background-size: auto 100%;
       width: 0.9rem;
       height: 0.8rem;
@@ -1001,7 +1001,7 @@ input.app-input {
   }
   
   .stars i.on {
-      background-image: url(http://m.yingdian.com/img/icon/star-on.png);
+      background-image: url(http://test.instore.com.cn/img/icon/star-on.png);
   }
   
   .empty {
@@ -1021,19 +1021,19 @@ input.app-input {
   }
   
   .empty .icon-coupon {
-      background-image: url(http://m.yingdian.com/img/icon/coupon-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/coupon-gray.png);
   }
   
   .empty .icon-search {
-      background-image: url(http://m.yingdian.com/img/icon/search-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/search-gray.png);
   }
   
   .empty .icon-looked {
-      background-image: url(http://m.yingdian.com/img/icon/looked-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/looked-gray.png);
   }
   
   .empty .icon-fav {
-      background-image: url(http://m.yingdian.com/img/icon/fav-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/fav-gray.png);
   }
   
   .empty p {
@@ -1089,27 +1089,27 @@ input.app-input {
 }
 
 .buttons-tab .icon-live {
-    background-image: url(http://m.yingdian.com/img/icon/live.png);
+    background-image: url(http://test.instore.com.cn/img/icon/live.png);
 }
 
 .buttons-tab .button.active .icon-live {
-    background-image: url(http://m.yingdian.com/img/icon/live-on.png);
+    background-image: url(http://test.instore.com.cn/img/icon/live-on.png);
 }
 
 .buttons-tab .icon-act {
-    background-image: url(http://m.yingdian.com/img/icon/act.png);
+    background-image: url(http://test.instore.com.cn/img/icon/act.png);
 }
 
 .buttons-tab .button.active .icon-act {
-    background-image: url(http://m.yingdian.com/img/icon/act-on.png);
+    background-image: url(http://test.instore.com.cn/img/icon/act-on.png);
 }
 
 .buttons-tab .icon-discount {
-    background-image: url(http://m.yingdian.com/img/icon/discount.png);
+    background-image: url(http://test.instore.com.cn/img/icon/discount.png);
 }
 
 .buttons-tab .button.active .icon-discount {
-    background-image: url(http://m.yingdian.com/img/icon/discount-on.png);
+    background-image: url(http://test.instore.com.cn/img/icon/discount-on.png);
 }
 
 .tabs {
@@ -1165,7 +1165,7 @@ input.app-input {
     display: block;
     text-overflow: ellipsis;
     margin-top: 0.3rem;
-    background: url(http://m.yingdian.com/img/icon/address.png) no-repeat left center;
+    background: url(http://test.instore.com.cn/img/icon/address.png) no-repeat left center;
     background-size: auto 90%;
     padding-left: 0.8rem;
 }
@@ -1227,7 +1227,7 @@ input.app-input {
     left: 50%;
     margin-top: -1rem;
     margin-left: -1rem;
-    background: url(http://m.yingdian.com/img/icon/living.png) no-repeat center center;
+    background: url(http://test.instore.com.cn/img/icon/living.png) no-repeat center center;
     background-size: 100% auto;
     z-index: 2;
 }
@@ -1322,7 +1322,7 @@ input.app-input {
     float: right;
     width: 0.4rem;
     height: 100%;
-    background: url(http://m.yingdian.com/img/icon/arrow-right.png) no-repeat center center;
+    background: url(http://test.instore.com.cn/img/icon/arrow-right.png) no-repeat center center;
     margin-right: 0.75rem;
     background-size: 100% auto;
 }
@@ -1458,7 +1458,7 @@ input.app-input {
     display: inline-block;
     vertical-align: middle;
     padding-left: 1.2rem;
-    background: url(http://m.yingdian.com/img/icon/contact.png) no-repeat left center;
+    background: url(http://test.instore.com.cn/img/icon/contact.png) no-repeat left center;
     background-size: 1rem auto;
 }
 
@@ -1489,7 +1489,7 @@ input.app-input {
 .shop-list .address {
     display: block;
     padding-left: 1rem;
-    background: url(http://m.yingdian.com/img/icon/address.png) no-repeat left center;
+    background: url(http://test.instore.com.cn/img/icon/address.png) no-repeat left center;
     background-size: auto 90%;
     font-size: 0.65rem;
     color: #757575;
@@ -1522,7 +1522,7 @@ input.app-input {
     display: inline-block;
     margin: 2.5rem auto 1.5rem;
     overflow: hidden;
-    background: url(http://m.yingdian.com/img/icon/order-success.png) no-repeat center center;
+    background: url(http://test.instore.com.cn/img/icon/order-success.png) no-repeat center center;
     background-size: 100% auto;
 }
 

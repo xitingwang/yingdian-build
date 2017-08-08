@@ -945,7 +945,7 @@ input.app-input {
   
   .app-topbar .app-button.left {
       height: 100%;
-      background-image: url(http://m.yingdian.com/img/icon/back-black.png);
+      background-image: url(http://test.instore.com.cn/img/icon/back-black.png);
       background-size: auto 0.75rem;
       display: block;
   }
@@ -970,7 +970,7 @@ input.app-input {
   
   .male,
   .female {
-      background: url(http://m.yingdian.com/img/icon/male.png) no-repeat right center;
+      background: url(http://test.instore.com.cn/img/icon/male.png) no-repeat right center;
       background-size: 0.7rem auto;
       padding-right: 0.8rem;
       display: inline-block;
@@ -979,7 +979,7 @@ input.app-input {
   }
   
   .female {
-      background-image: url(http://m.yingdian.com/img/icon/female.png);
+      background-image: url(http://test.instore.com.cn/img/icon/female.png);
   }
   
   .stars {
@@ -991,7 +991,7 @@ input.app-input {
   }
   
   .stars i {
-      background: url(http://m.yingdian.com/img/icon/star.png) repeat-x left center;
+      background: url(http://test.instore.com.cn/img/icon/star.png) repeat-x left center;
       background-size: auto 100%;
       width: 0.9rem;
       height: 0.8rem;
@@ -1001,7 +1001,7 @@ input.app-input {
   }
   
   .stars i.on {
-      background-image: url(http://m.yingdian.com/img/icon/star-on.png);
+      background-image: url(http://test.instore.com.cn/img/icon/star-on.png);
   }
   
   .empty {
@@ -1021,19 +1021,19 @@ input.app-input {
   }
   
   .empty .icon-coupon {
-      background-image: url(http://m.yingdian.com/img/icon/coupon-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/coupon-gray.png);
   }
   
   .empty .icon-search {
-      background-image: url(http://m.yingdian.com/img/icon/search-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/search-gray.png);
   }
   
   .empty .icon-looked {
-      background-image: url(http://m.yingdian.com/img/icon/looked-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/looked-gray.png);
   }
   
   .empty .icon-fav {
-      background-image: url(http://m.yingdian.com/img/icon/fav-gray.png);
+      background-image: url(http://test.instore.com.cn/img/icon/fav-gray.png);
   }
   
   .empty p {
@@ -1233,15 +1233,15 @@ video {
 }
 
 #send-gift {
-    background-image: url(http://m.yingdian.com/img/icon/white-gift.png);
+    background-image: url(http://test.instore.com.cn/img/icon/white-gift.png);
 }
 
 #more-info {
-    background-image: url(http://m.yingdian.com/img/icon/white-more.png);
+    background-image: url(http://test.instore.com.cn/img/icon/white-more.png);
 }
 
 #fav-live {
-    background-image: url(http://m.yingdian.com/img/icon/white-heart.png);
+    background-image: url(http://test.instore.com.cn/img/icon/white-heart.png);
 }
 
 #full-screen {
@@ -1249,7 +1249,7 @@ video {
     height: 1rem;
     float: right;
     display: inline-block;
-    background: url(http://m.yingdian.com/img/icon/white-fullscreen.png) no-repeat center center;
+    background: url(http://test.instore.com.cn/img/icon/white-fullscreen.png) no-repeat center center;
     background-size: 100% auto;
     overflow: hidden;
     margin: 0.5rem;
@@ -1325,14 +1325,14 @@ video {
     height: 0.8rem;
     display: inline-block;
     float: right;
-    background: url(http://m.yingdian.com/img/icon/white-close.png) no-repeat center center;
+    background: url(http://test.instore.com.cn/img/icon/white-close.png) no-repeat center center;
     background-size: auto 100%;
     margin-left: 1rem;
     margin-top: 0.6rem;
 }
 
 #share-live {
-    background-image: url(http://m.yingdian.com/img/icon/white-share.png);
+    background-image: url(http://test.instore.com.cn/img/icon/white-share.png);
     margin-left: 0;
 }
 
@@ -1416,7 +1416,7 @@ video {
     max-width: 100%;
 }
 .landscape .header{
-    background: url(http://m.yingdian.com/img/icon/top-bg-2.png) repeat-x;
+    background: url(http://test.instore.com.cn/img/icon/top-bg-2.png) repeat-x;
     background-size: 100% 100%;
 }
 .landscape .header .left::before{
@@ -1486,7 +1486,7 @@ video {
         max-width: 100%;
     }
     .header{
-        background: url(http://m.yingdian.com/img/icon/top-bg-2.png) repeat-x;
+        background: url(http://test.instore.com.cn/img/icon/top-bg-2.png) repeat-x;
         background-size: 100% 100%;
     }
     .header .left::before{
