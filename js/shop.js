@@ -3254,6 +3254,21 @@ App._Navigation = function(i, l, o, g, u, p, k, d) {
                 }
             });
         },
+        inputFocus: function () {
+            var agent = navigator.userAgent.toLowerCase();
+            setTimeout(function () {
+                if (agent.indexOf('safari') != -1 && agent.indexOf('mqqbrowser') == -1
+                    && agent.indexOf('coast') == -1 && agent.indexOf('android') == -1
+                    && agent.indexOf('linux') == -1 && agent.indexOf('firefox') == -1) {//safra浏览器
+                    window.scrollTo(0, 1000000);//先滚动到最底部，再用scrollY得到当前的值，必须延迟 否则拿到的就是1000000
+                    setTimeout(function(){
+                        window.scrollTo(0, window.scrollY - 45);//45像素 所有浏览器都是这么高
+                    }, 50)
+                } else {//其他浏览器
+                    window.scrollTo(0, 1000000);
+                }
+            }, 200);
+        },
         /**
          * 获取url参数
          */
