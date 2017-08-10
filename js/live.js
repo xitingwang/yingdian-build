@@ -3541,6 +3541,7 @@ App.controller('live', function(page) {
 
                 $('#live-room,.header,.messages').on(Common.event.tap, function(e){
                     $('#actions-border').removeClass('fast-actions').removeClass('ask-actions');
+                    document.activeElement.blur();
                    if(e.srcElement == $('#share-live')[0])return;
                     $('.bottom-border').hide();
                 });
@@ -3552,6 +3553,7 @@ App.controller('live', function(page) {
 
                 $('#btn-ask').on(Common.event.tap, function(){
                     $('#actions-border').toggleClass('fast-actions');
+                    document.activeElement.blur();
                 });
 
                 $('.pay-wechat,.pay-alipay').on(Common.event.tap, function(){
