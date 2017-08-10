@@ -3548,6 +3548,7 @@ App.controller('live', function(page) {
 
                 $('#txt-ask').on('focus', function(){
                     $('#actions-border').addClass('ask-actions');
+                    $('#actions-border').removeClass('fast-actions');
                     Common.inputFocus();
                 });
 
