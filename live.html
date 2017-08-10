@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="live-room">
+            <div id="live-room">
                 <video poster="http://test.instore.com.cn/img/live-1.jpeg" class="blur"></video>
                 <div class="control">
                     <i id="full-screen"></i>
@@ -58,7 +58,7 @@
                     </p>
                 </div>
             </div>
-            <div class="loading-border live-loading hide">
+            <div class="loading-border live-status hide">
                 <div class="loading-mask"></div>
                 <div class="main">
                     <span class="preloader preloader-white"></span>
@@ -109,148 +109,148 @@
                     <div class="ask-border">
                         <span id="btn-ask">一键提问</span>
                         <div class="input">
-                            <input type="text" placeholder="对主播提问" />
+                            <input type="search" placeholder="对主播提问" id="txt-ask" />
                         </div>
                     </div>
                 </div>
-                <div class="ask-list hide">
+                <div id="ask-list">
                     <div class="buttons-tab">
-                        <span class="active">看车</span>
-                        <span>试驾</span>
-                        <span>售后</span>
-                        <span>提车</span>
-                        <span>保险/金融</span>
+                        <span class="active" data-id="1">看车</span>
+                        <span data-id="2">试驾</span>
+                        <span data-id="3">售后</span>
+                        <span data-id="4">提车</span>
+                        <span data-id="5">保险/金融</span>
                     </div>
                     <div class="tabs">
-                        <div class="tab active">
+                        <div class="tab active" data-id="1">
                             <ul>
-                                <li>我想看外观</li>
-                                <li>我想看内饰</li>
-                                <li>我想了解动力</li>
-                                <li>我想了解操控如何</li>
-                                <li>我想了解安全配置</li>
+                                <li>我想看外观1</li>
+                                <li>我想看内饰1</li>
+                                <li>我想了解动力1</li>
+                                <li>我想了解操控如何1</li>
+                                <li>我想了解安全配置1</li>
                             </ul>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-id="2">
                             <ul>
-                                <li>我想看外观</li>
-                                <li>我想看内饰</li>
-                                <li>我想了解动力</li>
-                                <li>我想了解操控如何</li>
-                                <li>我想了解安全配置</li>
+                                <li>我想看外观2</li>
+                                <li>我想看内饰2</li>
+                                <li>我想了解动力2</li>
+                                <li>我想了解操控如何2</li>
+                                <li>我想了解安全配置2</li>
                             </ul>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-id="3">
                             <ul>
-                                <li>我想看外观</li>
-                                <li>我想看内饰</li>
-                                <li>我想了解动力</li>
-                                <li>我想了解操控如何</li>
-                                <li>我想了解安全配置</li>
+                                <li>我想看外观3</li>
+                                <li>我想看内饰3</li>
+                                <li>我想了解动力3</li>
+                                <li>我想了解操控如何3</li>
+                                <li>我想了解安全配置3</li>
                             </ul>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-id="4">
                             <ul>
-                                <li>我想看外观</li>
-                                <li>我想看内饰</li>
-                                <li>我想了解动力</li>
-                                <li>我想了解操控如何</li>
-                                <li>我想了解安全配置</li>
+                                <li>我想看外观4</li>
+                                <li>我想看内饰4</li>
+                                <li>我想了解动力4</li>
+                                <li>我想了解操控如何4</li>
+                                <li>我想了解安全配置4</li>
                             </ul>
                         </div>
-                        <div class="tab">
+                        <div class="tab" data-id="5">
                             <ul>
-                                <li>我想看外观</li>
-                                <li>我想看内饰</li>
-                                <li>我想了解动力</li>
-                                <li>我想了解操控如何</li>
-                                <li>我想了解安全配置</li>
+                                <li>我想看外观5</li>
+                                <li>我想看内饰5</li>
+                                <li>我想了解动力5</li>
+                                <li>我想了解操控如何5</li>
+                                <li>我想了解安全配置5</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="share-border" class="hide">
-                <div class="share-item">
+            <div id="share-border" class="bottom-border">
+                <div class="item">
                     <i class="wechat"></i>
                     <label>微信</label>
                 </div>
-                <div class="share-item">
+                <div class="item">
                     <i class="friend"></i>
                     <label>朋友圈</label>
                 </div>
-                <div class="share-item">
-                    <i class="webo"></i>
+                <div class="item">
+                    <i class="wibo"></i>
                     <label>微博</label>
                 </div>
-                <div class="share-item">
+                <div class="item">
                     <i class="qq"></i>
                     <label>QQ</label>
                 </div>
-                <div class="share-item">
+                <div class="item">
                     <i class="qzone"></i>
                     <label>QQ空间</label>
                 </div>
-                <div class="share-item">
+                <div class="item">
                     <i class="sms"></i>
                     <label>短信</label>
                 </div>
-                <div class="share-item">
+                <div class="item">
                     <i class="copy"></i>
                     <label>复制链接</label>
                 </div>
             </div>
-            <div id="gift-border" class="hide">
-                <div class="gift-item">
+            <div id="gift-border" class="bottom-border">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-1.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-2.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-3.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-4.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-5.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-6.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-7.png" />
                     </span>
                     <strong>666</strong>
                     <label>¥1.00</label>
                 </div>
-                <div class="gift-item">
+                <div class="item">
                     <span class="img">
                         <img src="http://test.instore.com.cn/img/gift/gift-8.png" />
                     </span>
@@ -258,13 +258,13 @@
                     <label>¥1.00</label>
                 </div>
             </div>
-            <div id="more-border" class="hide">
+            <div id="more-border" class="bottom-border">
                 <div class="buttons-tab">
-                    <span class="active">活动介绍</span>
-                    <span>优惠</span>
+                    <span class="active" data-id="act">活动介绍</span>
+                    <span data-id="discount">优惠</span>
                 </div>
                 <div class="tabs">
-                    <div class="tab active">
+                    <div class="tab active" data-id="act">
                         <div class="act-info">
                             <div class="img"><img src="http://test.instore.com.cn/img/temp-1.jpg" /></div>
                             <div class="info">
@@ -287,7 +287,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab">
+                    <div class="tab" data-id="discount">
                         <div class="discount-info">
                             <div class="img"><img src="http://test.instore.com.cn/img/temp-2.jpg" /></div>
                             <div class="title">优惠主题名称优惠主题名称优惠主题名称</div>
@@ -296,7 +296,7 @@
                 </div>
             </div>
             <a href="javascript:;" id="get-coupons">领取优惠券</a>
-            <div id="coupons-border" class="hide">
+            <div id="coupons-border" class="bottom-border">
                 <ul>
                     <li>
                         <div class="title">
@@ -332,7 +332,8 @@
                 </ul>
             </div>
             <div id="pay-border" class="hide">
-                <div>
+                <div class="loading-mask"></div>
+                <div class="main">
                     <div class="pay-info">
                         <span class="title">购买礼物</span>
                         <span class="img"><img src="http://test.instore.com.cn/img/gift/gift-6.png" /></span>
@@ -358,6 +359,6 @@
         <div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>
         <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
         <script src="http://test.instore.com.cn/js/live.js"></script>
-</body>
+<script type="text/javascript" charset="utf-8" src="http://127.0.0.1:8132/livereload.js"></script></body>
 
 </html>

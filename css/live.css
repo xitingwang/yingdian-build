@@ -451,7 +451,7 @@ textarea.app-input {
 }
 
 .app-topbar .app-title {
-    font-size: 18px;
+    font-size: 0.9rem;
 }
 
 .app-topbar .app-title .app-icon {
@@ -1053,6 +1053,10 @@ video::-webkit-media-controls-enclosure {
     display: none !important;
 }
 
+input::-webkit-search-cancel-button{
+    display: none;
+}
+
 .hide {
     display: none;
 }
@@ -1082,28 +1086,115 @@ video {
     opacity: 0.7;
 }
 
-.loading-border {
+.loading-border,#pay-border {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     text-align: center;
+    z-index: 2;
 }
 
-.loading-border .main {
+#pay-border{
+    z-index: 4;
+}
+
+.loading-border .main,#pay-border .main {
     position: relative;
     z-index: 1;
     color: #fff;
 }
 
-.live-loading .preloader {
-    width: 2rem;
-    height: 2rem;
-    margin: 7rem auto 0.25rem;
+#pay-border .main{
+    width: 65%;
+    background: #fff;
+    display: inline-block;
+    margin: 8rem auto 0;
+    border-radius: 10px;
+    padding: 0.75rem;
 }
 
-.live-loading p {
+#pay-border .pay-info{
+    padding: 0.3rem 0;
+    line-height: 1.7rem;
+}
+#pay-border .pay-info .title{
+    font-size: 0.65rem;
+    color: #757575;
+    float: left;
+}
+#pay-border .pay-info .img,
+#pay-border .pay-info .money{
+    height: 1.7rem;
+    display: block;
+    margin-left: 3rem;
+}
+#pay-border .pay-info .money{
+    font-size: 1rem;
+    color: #ff6f6f;
+    text-align: left
+}
+#pay-border .pay-info img{
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+#pay-border .line{
+    border-bottom: 1px solid #e5e5e5;
+    height: 1px;
+}
+#pay-border .pay-item{
+    padding: 1rem 0 0.75rem;
+    overflow: hidden
+}
+#pay-border .pay-item span{
+    width: 48%;
+    height: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: url(http://test.instore.com.cn/img/icon/pay-wechat.png) no-repeat center center;
+    background-size: auto 60%;
+    display: block;
+    float: left;
+}
+#pay-border .pay-item span.selected{
+    border: 1px solid #f7b132;
+}
+#pay-border .pay-item span i{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(http://test.instore.com.cn/img/icon/selected.png) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+#pay-border .pay-item span.selected i{
+    display: block;
+}
+#pay-border .pay-item span.pay-alipay{
+    background-image: url(http://test.instore.com.cn/img/icon/pay-alipay.png);
+    float: right;
+}
+#pay-confirm{
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 4px;
+    background: #f7b132;
+    color: #fff;
+    font-size: 0.85rem;
+}
+.live-status .preloader {
+    width: 2rem;
+    height: 2rem;
+    margin: 9rem auto 0.25rem;
+}
+
+.live-status p {
     font-size: 0.85rem;
     color: #fff;
 }
@@ -1112,7 +1203,7 @@ video {
     width: 4rem;
     height: 4rem;
     display: inline-block;
-    margin: 5rem auto 2rem;
+    margin: 8rem auto 1rem;
     border-radius: 4rem;
     overflow: hidden;
 }
@@ -1130,13 +1221,13 @@ video {
     color: #fff;
 }
 
-.live-room {
+#live-room {
     height: 10rem;
     position: relative;
     margin-top: 3rem;
 }
 
-.live-room .control {
+#live-room .control {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -1147,10 +1238,11 @@ video {
 }
 
 #actions-border {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
 }
 
 #actions-border .main {
@@ -1262,7 +1354,7 @@ video {
     left: 0;
     width: 100%;
     height: 3rem;
-    z-index: 1;
+    z-index: 3;
 }
 
 .header .main {
@@ -1425,11 +1517,11 @@ video {
 .landscape .header .left label{
     color: #ddd;
 }
-.landscape .live-room{
+.landscape #live-room{
     height: 100%;
     margin-top: 0;
 }
-.landscape .live-room .control{
+.landscape #live-room .control{
     display: none;
 }
 .landscape #actions-border .main{
@@ -1471,6 +1563,371 @@ video {
     padding: 0.2rem 0;
 }
 
+.bottom-border{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    background: #fff;
+    display: none;
+}
+.bottom-border .item{
+    width: 25%;
+    height: 5rem;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box
+}
+#gift-border .item{
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+#gift-border .item .img{
+    width: auto;
+    height: 2rem;
+    display: inline-block;
+    margin: 0.6rem auto 0;
+}
+#gift-border .item .img img{
+    height: 100%;
+    width: auto;
+}
+#gift-border .item strong{
+    display: block;
+    color: #757575;
+    font-size: 0.65rem;
+}
+#gift-border .item label{
+    display: block;
+    color: #b5b5b5;
+    font-size: 0.55rem;
+}
+
+#share-border .item i{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 0.6rem auto 0.3rem;
+    border-radius: 2.5rem;
+    border: 1px solid #e5e5e5;
+    background-position: center center;
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+}
+
+#share-border .item label{
+    display: block;
+    font-size: 0.55rem;
+    color: #757575;
+}
+
+#share-border i.wechat{
+    background-image: url(http://test.instore.com.cn/img/icon/share-wechat.png);
+}
+
+#share-border i.friend{
+    background-image: url(http://test.instore.com.cn/img/icon/share-friend.png);
+}
+
+#share-border i.wibo{
+    background-image: url(http://test.instore.com.cn/img/icon/share-wibo.png);
+}
+
+#share-border i.qq{
+    background-image: url(http://test.instore.com.cn/img/icon/share-qq.png);
+}
+
+#share-border i.qzone{
+    background-image: url(http://test.instore.com.cn/img/icon/share-qzone.png);
+}
+
+#share-border i.sms{
+    background-image: url(http://test.instore.com.cn/img/icon/share-sms.png);
+}
+
+#share-border i.copy{
+    background-image: url(http://test.instore.com.cn/img/icon/share-copy.png);
+}
+
+#more-border .buttons-tab span{
+    width: 50%;
+    height: 2.5rem;
+    display: inline-block;
+    float: left;
+    line-height: 2.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.85rem;
+}
+#more-border .buttons-tab span.active{
+    border-bottom: 4px solid #f7b132;
+    color: #f7b132;
+}
+#more-border .tabs{
+    width: 100%;
+    overflow: hidden;
+}
+#more-border .tab{
+    display: none;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+}
+#more-border .tab.active{
+    display: block;
+}
+
+
+.act-info .img {
+    width: 100%
+}
+
+.act-info .info,
+.act-info .car {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.act-info .car {
+    font-size: 0.95rem;
+}
+
+.act-info .info p {
+    line-height: 1.2rem;
+    font-size: 0.65rem;
+    margin-right: 4rem;
+}
+
+.act-info .info p span,
+.act-info .car span {
+    color: #757575;
+    margin-right: 0.75rem;
+    font-size: 0.65rem;
+}
+
+.act-info .info .status {
+    float: right;
+    text-align: center;
+}
+
+.act-info .info .status label {
+    display: block;
+    font-size: 0.6rem;
+    color: #757575;
+}
+
+.act-info .info .status span {
+    width: 3rem;
+    height: 1rem;
+    border-radius: 1.2rem;
+    background: #53bbf0;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+}
+
+.act-info .intro {
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.act-info .intro strong {
+    line-height: 1.2rem;
+    font-size: 0.75rem;
+}
+
+.act-info .intro p {
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #757575;
+}
+
+.discount-info .title {
+    padding: 0 0.75rem;
+    font-size: 0.95rem;
+    line-height: 2rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#coupons-border ul {
+    padding: 0.75rem;
+    background: #f5f5f5;
+}
+
+#coupons-border li {
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border-top: 8px solid #f7b234;
+    position: relative;
+    text-align: left;
+}
+
+
+#coupons-border .title {
+    padding: 0.5rem 1rem 0;
+    line-height: 2rem;
+    overflow: hidden;
+}
+
+#coupons-border .title p strong {
+    font-size: 1rem;
+    color: #f7b132;
+    display: block
+}
+
+#coupons-border .title p span {
+    font-size: 1.4rem;
+    color: #f7b132;
+    display: block
+}
+
+#coupons-border .title em {
+    font-style: normal;
+    font-size: 1rem;
+    margin-right: 0.1rem;
+    color: #f7b132;
+}
+#coupons-border .title p{
+    margin-right: 30%;
+}
+#coupons-border .button{
+    float: right;
+    width: 4.5rem;
+    border: 1px solid #f7b132;
+    height: 2rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+}
+#coupons-border .receive-button{
+    background: #f7b132;
+    line-height: 2rem;
+}
+#coupons-border .button label{
+    font-size: 0.6rem;
+    color: #f7b132;
+    display: block
+}
+#coupons-border .button strong{
+    font-size: 0.75rem;
+    color: #f7b132;
+    display: block
+}
+#coupons-border .receive-button span{
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+#coupons-border .info {
+    line-height: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-top: 6px dotted #f5f5f5;
+}
+#coupons-border .info span{
+    font-size: 0.6rem;
+    color: #757575;
+}
+#coupons-border .info label{
+    float: right;
+    font-size: 0.6rem;
+}
+
+.ask-actions .actions{
+    display: none;
+}
+#ask-list{
+    display: none;
+}
+.fast-actions #ask-list{
+    display: block;
+}
+.ask-actions #btn-ask{
+    width: 3.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    display: block;
+    float: left;
+    border-radius: 1.5rem;
+    font-size: 0.75rem;
+    color: #fff;
+    text-align: center;
+    background: #b5b5b5;
+    border: 1px solid #b5b5b5;
+}
+
+.fast-actions #btn-ask{
+    background: #f7b132;
+    border: 1px solid #f7b132;
+}
+
+#actions-border.ask-actions{
+    background: #f5f5f5;
+}
+#actions-border.ask-actions .main{
+    height: 1.5rem;
+}
+#actions-border.ask-actions .ask-border{
+    width: 100%;
+}
+.ask-actions .ask-border .input{
+    margin-left: 4.25rem;
+    padding: 0.25rem 0.5rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.ask-actions .ask-border .input input{
+    color: #303030;
+}
+
+#ask-list .buttons-tab{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+#ask-list .buttons-tab span{
+    line-height: 1.7rem;
+    color: #757575;
+    font-size: 0.65rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#ask-list .buttons-tab span.active{
+    color: #f7b132;
+    border-bottom: 2px solid #f7b132;
+}
+#ask-list .tab{
+    display: none;
+}
+#ask-list .active{
+    display: block;
+}
+#ask-list ul{
+    padding-left: 0.75rem;
+}
+#ask-list li{
+    line-height: 2.25rem;
+    font-size: 0.75rem;
+    color: #757575;
+    border-bottom: 1px solid #e5e5e5;
+}
+
 @media screen and (orientation:portrait) {
     /*竖屏 css*/
     .app-page{
@@ -1495,11 +1952,11 @@ video {
     .header .left label{
         color: #ddd;
     }
-    .live-room{
+    #live-room{
         height: 100%;
         margin-top: 0;
     }
-    .live-room .control{
+    #live-room .control{
         display: none;
     }
     #actions-border .main{
@@ -1546,5 +2003,26 @@ video {
     }
     #get-coupons{
         top: 30%;
+    }
+    #share-border .item{
+        width: 14.285%;
+    }
+    #gift-border .item{
+        width: 12.5%;
+    }
+
+    .live-status .preloader {
+        margin-top: 6rem
+    }
+    .req-loading .img{
+        margin-bottom: 1rem;
+    }
+    #more-border,#coupons-border,#actions-border.fast-actions{
+        top: 4rem;
+        bottom: auto;
+    }
+    #pay-border .main{
+        margin-top: 2.5rem;
+        width: 14rem;
     }
 }

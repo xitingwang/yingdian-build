@@ -3504,6 +3504,58 @@ App.controller('live', function(page) {
             },
             initEvent: function() {
                 var self = this;
+                $('#share-live').on(Common.event.tap, function(){
+                    $('.bottom-border').hide();
+                    $("#share-border").toggle();
+                });
+
+                $('#send-gift').on(Common.event.tap, function(){
+                    $('.bottom-border').hide();
+                    $('#gift-border').toggle();
+                });
+
+                $('#more-info').on(Common.event.tap, function(){
+                    $('.bottom-border').hide();
+                    $('#more-border').toggle();
+                });
+
+                $('#get-coupons').on(Common.event.tap, function(){
+                    $('.bottom-border').hide();
+                    $('#coupons-border').toggle();
+                });
+
+                $('#live-room,.header,.messages').on(Common.event.tap, function(e){
+                    $('#actions-border').removeClass('fast-actions').removeClass('ask-actions');
+                   if(e.srcElement == $('#share-live')[0])return;
+                    $('.bottom-border').hide();
+                });
+
+                $('#txt-ask').on('focus', function(){
+                    $('#actions-border').addClass('ask-actions');
+                });
+
+                $('#btn-ask').on(Common.event.tap, function(){
+                    $('#actions-border').toggleClass('fast-actions');
+                });
+
+                $('.pay-wechat,.pay-alipay').on(Common.event.tap, function(){
+                    $(this).addClass('selected').siblings().removeClass('selected');
+                });
+
+                $('.app-page').on(Common.event.tap, '.buttons-tab span', function(){
+                    var id = $(this).data('id');
+                    $(this).addClass('active').siblings().removeClass('active');
+                    $('.tab').each(function(){
+                        var tab_id = $(this).data('id');
+                        if(id==tab_id){
+                            $(this).addClass('active').siblings().removeClass('active');
+                        }
+                    });
+                }).on(Common.event.tap, '.loading-mask', function(){
+                    $(this).parent().hide();
+                }).on(Common.event.tap, '#gift-border .item', function(){
+                    $('#pay-border').show();
+                });
             }
         });
 
