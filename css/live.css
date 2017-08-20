@@ -675,7 +675,7 @@ input.app-input {
     height: 100%;
     position: fixed;
     z-index: 3002;
-    background: #000;
+    background: #fff;
     top: 0;
     left: 0;
 }
@@ -697,33 +697,6 @@ input.app-input {
     background: none;
     background-size: auto 100%;
     float: left;
-    animation-name: shake;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes shake {
-    from {
-        -webkit-transform: scale(0.9, 0.9);
-    }
-    3% {
-        -webkit-transform: scale(1.1, 1.1);
-    }
-    to {
-        -webkit-transform: scale(0.9, 0.9);
-    }
-}
-
-@keyframes shake {
-    from {
-        transform: scale(0.9, 0.9);
-    }
-    3% {
-        transform: scale(1.1, 1.1);
-    }
-    to {
-        transform: scale(0.9, 0.9);
-    }
 }
 
 @-webkit-keyframes loading {
@@ -805,6 +778,92 @@ input.app-input {
     padding: 0.8rem 0;
     text-align: center;
 }
+
+
+  .pull-down,
+  .pull-up {
+      /* background: #fff; */
+      height: 1.5rem;
+      /* border-bottom: 1px solid #ccc; */
+      font-weight: bold;
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+      display: none;
+  }
+
+  .pull-down {
+      margin-top: -1.5rem;
+  }
+
+  .pull-down label,
+  .pull-up label {
+      position: relative;
+      display: inline-block;
+      line-height: 2rem;
+      padding-left: 1.2rem;
+  }
+
+  .pull-down i,
+  .pull-up i {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      background: url(http://test.instore.com.cn/img/icon/pull-icon@2x.png) 0 0 no-repeat;
+      -webkit-background-size: 1rem 2rem;
+      background-size: 1rem 2rem;
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 250ms;
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+  }
+
+  .pull-down i {
+      -webkit-transform: rotate(0deg) translateZ(0);
+  }
+
+  .pull-up i {
+      -webkit-transform: rotate(-180deg) translateZ(0);
+  }
+
+  .pull-down.pull-flip,
+  .pull-down.pull-loading {
+      margin-top: 0;
+  }
+
+  .pull-down.pull-flip i {
+      -webkit-transform: rotate(-180deg) translateZ(0);
+  }
+
+  .pull-up.pull-flip i {
+      -webkit-transform: rotate(0deg) translateZ(0);
+  }
+
+  .pull-down.pull-loading i,
+  .pull-up.pull-loading i {
+      background-position: 0 100%;
+      -webkit-transform: rotate(0deg) translateZ(0);
+      -webkit-transition-duration: 0ms;
+      -webkit-animation-name: pullloading;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes pullloading {
+      from {
+          -webkit-transform: rotate(0deg) translateZ(0);
+      }
+      to {
+          -webkit-transform: rotate(360deg) translateZ(0);
+      }
+  }
+
+  .pull-down.disabled,
+  .pull-up.disabled {
+      display: none !important;
+  }
   html {
       font-size: 20px;
   }
@@ -974,7 +1033,7 @@ input.app-input {
       background-size: 0.7rem auto;
       padding-right: 0.8rem;
       display: inline-block;
-      margin-right: 0.75rem;
+      margin-right: 0.25rem;
       font-size: 0.75rem;
   }
   
@@ -984,24 +1043,22 @@ input.app-input {
   
   .stars {
       background-size: auto 100%;
-      width: 5rem;
-      height: 0.8rem;
+      width: 3.5rem;
+      height: 0.7rem;
       display: inline-block;
       vertical-align: middle;
+      background: url(http://test.instore.com.cn/img/icon/star.png) repeat-x left center;
+      background-size: auto 100%;
   }
   
   .stars i {
-      background: url(http://test.instore.com.cn/img/icon/star.png) repeat-x left center;
+      background: url(http://test.instore.com.cn/img/icon/star-on.png) repeat-x left center;
       background-size: auto 100%;
-      width: 0.9rem;
-      height: 0.8rem;
+      width: 40%;
+      height: 0.7rem;
       display: inline-block;
       float: left;
       margin-right: 0.1rem;
-  }
-  
-  .stars i.on {
-      background-image: url(http://test.instore.com.cn/img/icon/star-on.png);
   }
   
   .empty {
@@ -1554,6 +1611,7 @@ video {
     border-radius: 7px;
     padding: 0.3rem;
     overflow: hidden;
+    display: inline-block;
 }
 .landscape .messages li p.msg-in{
     background: #f8b233;

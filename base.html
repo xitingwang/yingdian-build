@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self' *.googlesyndication.com *.yy.com *.pstatp.com *.vc123.cn *.bdimg.com *.hiido.com *.yystatic.com *.qq.com *.vd100.com *.vw100.cn *.baidu.com data: blob: *.qlogo.cn weixin: weixinping: *.qiniucdn.com *.bigha.cn *.wemark.cn 'unsafe-eval' 'unsafe-inline'; frame-src 'self' *">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+
+        <link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+        <title></title>
+        <style>
+            html {
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                line-height: 1.6
+            }
+            body {
+                -webkit-touch-callout: none;
+                font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+                background-color: #f3f3f3;
+                line-height: inherit
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 400;
+                font-size: 16px
+            }
+
+            * {
+                margin: 0;
+                padding: 0
+            }
+
+            a {
+                color: #607fa6;
+                text-decoration: none
+            }
+
+            .rich_media_inner {
+                font-size: 16px;
+                word-wrap: break-word;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                display:none;
+            }
+
+            .rich_media_area_primary {
+                position: relative;
+                padding: 20px 15px 15px;
+                background-color: #fff
+            }
+
+            .rich_media_area_primary:before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid #e5e5e5;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+                -webkit-transform: scaleY(0.5);
+                transform: scaleY(0.5);
+                top: auto;
+                bottom: -2px
+            }
+
+            .rich_media_area_primary .original_img_wrp {
+                display: inline-block;
+                font-size: 0
+            }
+
+            .rich_media_area_primary .original_img_wrp .tips_global {
+                display: block;
+                margin-top: .5em;
+                font-size: 14px;
+                text-align: right;
+                width: auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal
+            }
+
+            .rich_media_area_extra {
+                padding: 0 15px 0;
+                overflow: hidden;
+                display:none;
+            }
+
+            .rich_media_title {
+                margin-bottom: 10px;
+                line-height: 1.4;
+                font-weight: 400;
+                font-size: 24px
+            }
+
+            .rich_media_meta_list {
+                margin-bottom: 18px;
+                line-height: 20px;
+                font-size: 0
+            }
+
+            .rich_media_meta_list em {
+                font-style: normal
+            }
+
+            .rich_media_meta {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 8px;
+                margin-bottom: 10px;
+                font-size: 16px
+            }
+
+            .meta_original_tag {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 1px .5em;
+                border: 1px solid #9e9e9e;
+                color: #8c8c8c;
+                border-top-left-radius: 20% 50%;
+                -moz-border-radius-topleft: 20% 50%;
+                -webkit-border-top-left-radius: 20% 50%;
+                border-top-right-radius: 20% 50%;
+                -moz-border-radius-topright: 20% 50%;
+                -webkit-border-top-right-radius: 20% 50%;
+                border-bottom-left-radius: 20% 50%;
+                -moz-border-radius-bottomleft: 20% 50%;
+                -webkit-border-bottom-left-radius: 20% 50%;
+                border-bottom-right-radius: 20% 50%;
+                -moz-border-radius-bottomright: 20% 50%;
+                -webkit-border-bottom-right-radius: 20% 50%;
+                font-size: 15px;
+                line-height: 1.1
+            }
+
+            .meta_enterprise_tag img {
+                width: 30px;
+                height: 30px!important;
+                display: block;
+                position: relative;
+                margin-top: -3px;
+                border: 0
+            }
+
+            .rich_media_meta_text {
+                color: #8c8c8c
+            }
+
+            span.rich_media_meta_nickname {
+                display: none
+            }
+
+            .rich_media_thumb_wrp {
+                margin-bottom: 6px
+            }
+
+            .rich_media_thumb_wrp .original_img_wrp {
+                display: block
+            }
+
+            .rich_media_thumb {
+                display: block;
+                width: 100%
+            }
+
+            .rich_media_content {
+                overflow: hidden;
+                color: #3e3e3e
+            }
+
+            .rich_media_content * {
+                max-width: 100%!important;
+                box-sizing: border-box!important;
+                -webkit-box-sizing: border-box!important;
+                word-wrap: break-word!important
+            }
+
+            .rich_media_content p {
+                clear: both;
+                min-height: 1em
+            }
+
+            .rich_media_content em {
+                font-style: italic
+            }
+
+            .rich_media_content fieldset {
+                min-width: 0
+            }
+
+            .rich_media_content .list-paddingleft-2 {
+                padding-left: 30px
+            }
+
+            .rich_media_content blockquote {
+                margin: 0;
+                padding-left: 10px;
+                border-left: 3px solid #dbdbdb
+            }
+
+            img {
+                height: auto!important
+            }
+
+            @media screen and (device-aspect-ratio:2/3),
+            screen and (device-aspect-ratio:40/71) {
+                .meta_original_tag {
+                    padding-top: 0
+                }
+            }
+
+            @media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) {
+                .mm_appmsg .rich_media_inner,
+                .mm_appmsg .rich_media_meta,
+                .mm_appmsg .discuss_list,
+                .mm_appmsg .rich_media_extra,
+                .mm_appmsg .title_tips .tips {
+                    font-size: 17px
+                }
+                .mm_appmsg .meta_original_tag {
+                    font-size: 15px
+                }
+            }
+
+            @media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) {
+                .mm_appmsg .rich_media_title {
+                    font-size: 25px
+                }
+            }
+
+            @media screen and (min-width:1024px) {
+                .rich_media {
+                    width: 740px;
+                    margin-left: auto;
+                    margin-right: auto
+                }
+                .rich_media_inner {
+                    padding: 20px
+                }
+                body {
+                    background-color: #fff
+                }
+            }
+
+            @media screen and (min-width:1025px) {
+                body {
+                    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif
+                }
+                .rich_media {
+                    position: relative
+                }
+                .rich_media_inner {
+                    background-color: #fff;
+                    padding-bottom: 100px
+                }
+            }
+
+            .radius_avatar {
+                display: inline-block;
+                background-color: #fff;
+                padding: 3px;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                overflow: hidden;
+                vertical-align: middle
+            }
+
+            .radius_avatar img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                background-color: #eee
+            }
+
+            .cell {
+                padding: .8em 0;
+                display: block;
+                position: relative
+            }
+
+            .cell_hd,
+            .cell_bd,
+            .cell_ft {
+                display: table-cell;
+                vertical-align: middle;
+                word-wrap: break-word;
+                word-break: break-all;
+                white-space: nowrap
+            }
+
+            .cell_primary {
+                width: 2000px;
+                white-space: normal
+            }
+
+            .flex_cell {
+                padding: 10px 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center
+            }
+
+            .flex_cell_primary {
+                width: 100%;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                box-flex: 1;
+                flex: 1
+            }
+
+            .original_tool_area {
+                display: block;
+                padding: .75em 1em 0;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                color: #3e3e3e;
+                border: 1px solid #eaeaea;
+                margin: 20px 0
+            }
+
+            .original_tool_area .tips_global {
+                position: relative;
+                padding-bottom: .5em;
+                font-size: 15px
+            }
+
+            .original_tool_area .tips_global:after {
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 1px;
+                border-bottom: 1px solid #dbdbdb;
+                -webkit-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+                -webkit-transform: scaleY(0.5);
+                transform: scaleY(0.5)
+            }
+
+            .original_tool_area .radius_avatar {
+                width: 27px;
+                height: 27px;
+                padding: 0;
+                margin-right: .5em
+            }
+
+            .original_tool_area .radius_avatar img {
+                height: 100%!important
+            }
+
+            .original_tool_area .flex_cell_bd {
+                width: auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal
+            }
+
+            .original_tool_area .flex_cell_ft {
+                font-size: 14px;
+                color: #8c8c8c;
+                padding-left: 1em;
+                white-space: nowrap
+            }
+
+            .original_tool_area .icon_access:after {
+                content: " ";
+                display: inline-block;
+                height: 8px;
+                width: 8px;
+                border-width: 1px 1px 0 0;
+                border-color: #cbcad0;
+                border-style: solid;
+                transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                -ms-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+                position: relative;
+                top: -2px;
+                top: -1px
+            }
+
+            .gif_img_wrp {
+                display: inline-block;
+                font-size: 0;
+                position: relative;
+                font-weight: 400;
+                font-style: normal;
+                text-indent: 0;
+                text-shadow: none 1px 1px rgba(0, 0, 0, 0.5)
+            }
+
+            .gif_img_wrp img {
+                vertical-align: top
+            }
+
+            .gif_img_tips {
+                background: rgba(0, 0, 0, 0.6)!important;
+                filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endcolorstr='#99000000');
+                border-top-left-radius: 1.2em 50%;
+                -moz-border-radius-topleft: 1.2em 50%;
+                -webkit-border-top-left-radius: 1.2em 50%;
+                border-top-right-radius: 1.2em 50%;
+                -moz-border-radius-topright: 1.2em 50%;
+                -webkit-border-top-right-radius: 1.2em 50%;
+                border-bottom-left-radius: 1.2em 50%;
+                -moz-border-radius-bottomleft: 1.2em 50%;
+                -webkit-border-bottom-left-radius: 1.2em 50%;
+                border-bottom-right-radius: 1.2em 50%;
+                -moz-border-radius-bottomright: 1.2em 50%;
+                -webkit-border-bottom-right-radius: 1.2em 50%;
+                line-height: 2.3;
+                font-size: 11px;
+                color: #fff;
+                text-align: center;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                min-width: 65px
+            }
+
+            .gif_img_tips.loading {
+                min-width: 75px
+            }
+
+            .gif_img_tips i {
+                vertical-align: middle;
+                margin: -0.2em .73em 0 -2px
+            }
+
+            .gif_img_play_arrow {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-width: 8px;
+                border-style: dashed;
+                border-color: transparent;
+                border-right-width: 0;
+                border-left-color: #fff;
+                border-left-style: solid;
+                border-width: 5px 0 5px 8px
+            }
+
+            .gif_img_loading {
+                width: 14px;
+                height: 14px
+            }
+
+            i.gif_img_loading {
+                margin-left: -4px
+            }
+
+            .gif_bg_tips_wrp {
+                position: relative;
+                height: 0;
+                line-height: 0;
+                margin: 0;
+                padding: 0
+            }
+
+            .gif_bg_tips_wrp .gif_img_tips_group {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9999
+            }
+
+            .gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips {
+                top: 0;
+                left: 0;
+                bottom: auto
+            }
+
+            .preview_appmsg .rich_media_title {
+                margin-top: 1.9em
+            }
+
+            .pages_reset {
+                color: #3e3e3e;
+                line-height: 1.6;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                text-indent: 0;
+                letter-spacing: normal;
+                text-align: left;
+                text-decoration: none
+            }
+
+            .weapp_element,
+            .weapp_display_element,
+            .mp-miniprogram {
+                display: block;
+                margin: 1em 0
+            }
+
+            .share_audio_context {
+                margin: 16px 0
+            }
+
+            .weapp_text_link {
+                font-size: 17px
+            }
+
+            .weapp_text_link:before {
+                content: '';
+                display: inline-block;
+                line-height: 1;
+                background-size: 12px 12px;
+                background-repeat: no-repeat;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAb1BMVEUAAAB4it11h9x2h9x2h9x2htx8j+R8i+B1h9x2h9x3h92Snv91htt2h9x1h9x4h9x1h9x1h9x2idx1h9t2h9t1htt1h9x1h9x1htx2h9x1h912h9x4h913iN17juOOjuN1iNx2h9t4h958i+B1htvejBiPAAAAJHRSTlMALPLcxKcVEOXXUgXtspU498sx69DPu5+Yc2JeRDwbCYuIRiGBtoolAAAA3ElEQVQoz62S1xKDIBBFWYiFYImm2DWF///G7DJEROOb58U79zi4O8iOo8zuCRfV8EdFgbYE49qFQs8ksJInajOA1wWfYvLcGSueU/oUGBtPpti09uNS68KTMcrQ5jce4kmN/HKn9XVPAo702JEdx9hTUrWUqVrI3KwUmM1NhIWMKdwiGvpGMWZOAj1PZuzAxHwhVSplrajoseBnbyDHAwvrtvKKhdqTtFBkL8wO5ijcsS3G1JMNvQ5mdW7fc0x0+ZcnlJlZiflAomdEyFaM7qeK2JahEjy5ZyU7jC/q/Rz/DgqEuAAAAABJRU5ErkJggg==');
+                vertical-align: middle;
+                font-size: 11px;
+                color: #888;
+                border-radius: 10px;
+                background-color: #f4f4f4;
+                margin-right: 6px;
+                margin-top: -4px;
+                background-position: center;
+                height: 20px;
+                width: 20px
+            }
+
+            .weui-mask {
+                position: fixed;
+                z-index: 1000;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.6)
+            }
+
+            .weui-dialog {
+                position: fixed;
+                z-index: 5000;
+                width: 80%;
+                max-width: 300px;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                text-align: center;
+                border-radius: 3px;
+                overflow: hidden
+            }
+
+            .weui-dialog__hd {
+                padding: 1.3em 1.6em .5em
+            }
+
+            .weui-dialog__title {
+                font-weight: 400;
+                font-size: 18px
+            }
+
+            .weui-dialog__bd {
+                padding: 0 1.6em .8em;
+                min-height: 40px;
+                font-size: 15px;
+                line-height: 1.3;
+                word-wrap: break-word;
+                word-break: break-all;
+                color: #999
+            }
+
+            .weui-dialog__bd:first-child {
+                padding: 2.7em 20px 1.7em;
+                color: #353535
+            }
+
+            .weui-dialog__ft {
+                position: relative;
+                line-height: 48px;
+                font-size: 18px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex
+            }
+
+            .weui-dialog__ft:after {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 1px;
+                border-top: 1px solid #d5d5d6;
+                color: #d5d5d6;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+                -webkit-transform: scaleY(0.5);
+                transform: scaleY(0.5)
+            }
+
+            .weui-dialog__btn {
+                display: block;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+                color: #3cc51f;
+                text-decoration: none;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                position: relative
+            }
+
+            .weui-dialog__btn:active {
+                background-color: #eee
+            }
+
+            .weui-dialog__btn:after {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1px;
+                bottom: 0;
+                border-left: 1px solid #d5d5d6;
+                color: #d5d5d6;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+                -webkit-transform: scaleX(0.5);
+                transform: scaleX(0.5)
+            }
+
+            .weui-dialog__btn:first-child:after {
+                display: none
+            }
+
+            .weui-dialog__btn_default {
+                color: #353535
+            }
+
+            .weui-dialog__btn_primary {
+                color: #0bb20c
+            }
+            .discuss_list {
+                list-style: none;
+            }
+
+            .discuss_item .discuss_message_content {
+                white-space: normal;
+            }
+            .video-border{
+                width: 100%;
+                padding-bottom: 75%;
+                position: relative;
+            }
+            .video-border iframe{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            #ad-border{
+                position: relative;
+            }
+            #ad-border img{
+                width: 100%;
+                max-height: 15rem;
+            }
+
+            .rich_media_tool {
+                overflow: hidden;
+                padding-top: 15px;
+                line-height: 32px;
+            }
+            .rich_media_tool .meta_praise {
+                margin-right: 0;
+                margin-left: 8px;
+            }
+            .rich_media_tool .meta_primary {
+                float: left;
+                margin-right: 10px;
+            }
+            .meta_praise {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                outline: 0;
+                min-width: 3.5em;
+            }
+            .tips_global {
+                color: #8c8c8c;
+            }
+
+            .rich_media_extra {
+                position: relative;
+            }
+            .rich_tips {
+                margin-top: 25px;
+                margin-bottom: 0;
+                min-height: 24px;
+                text-align: center;
+            }
+            .rich_tips.with_line {
+                line-height: 16px;
+                border-top: 1px dotted #e1e1e1;
+            }
+            .rich_tips.discuss_title_line {
+                margin-top: 50px;
+            }
+
+            .rich_tips .tips {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .rich_tips .tips, .rich_tips .rich_icon {
+                vertical-align: middle;
+            }
+            .title_tips .tips {
+                color: #868686;
+                font-size: 16px;
+            }
+            .rich_media_tool .meta_extra {
+                float: right;
+                margin-left: 10px;
+            }
+            .tips_global {
+                color: #8c8c8c;
+            }
+            .rich_tips.with_line .tips {
+                position: relative;
+                top: -12px;
+                padding-left: 16px;
+                padding-right: 16px;
+                background-color: #f3f3f3;
+            }
+            @media screen and (min-width: 1024px){
+                .rich_tips.with_line .tips {
+                    background-color: #fff;
+                }
+                .rich_media_title {
+                    padding-bottom: 10px;
+                    margin-bottom: 14px;
+                    border-bottom: 1px solid #e7e7eb;
+                }
+            }
+            .rich_tips.with_line .tips {
+                top: -11px;
+                padding-left: .35em;
+                padding-right: .35em;
+            }
+            
+            .discuss_icon_tips {
+                margin-bottom: 20px;
+            }
+            .title_bottom_tips {
+                margin-top: -10px;
+            }
+            .tr {
+                text-align: right;
+            }
+
+            .discuss_list {
+                list-style: none;
+                margin-top: -5px;
+                padding-bottom: 20px;
+                font-size: 16px;
+            }
+            .discuss_item {
+                position: relative;
+                padding-left: 45px;
+                margin-top: 26px;
+            }
+            .discuss_item .discuss_opr {
+                float: right;
+            }
+
+            .discuss_item .discuss_opr .meta_praise {
+                display: inline-block;
+                text-align: right;
+                padding-top: 5px;
+                margin-top: -5px;
+            }
+            .media_tool_meta i {
+                vertical-align: 0;
+                position: relative;
+                top: 1px;
+                margin-right: 3px;
+            }
+            .icon_praise_gray {
+                background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA+CAYAAAA1dwvuAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACd0lEQVRYhe2XMWhUMRjHfycdpDg4iJN26CQih4NUlFIc3iTasaAO+iZBnorIId2CDg6PLqWDXSy0p28TJ6ejILgoKiLFSeRcnASLnDf2HPKll8b3ah5NQPB+cHzJl0v+73J5Sf6NwWCAD6kqxoEV4BywCTwA2j59V9QlxrxUNJeBOSkfBtaAHvDcp/O+GkJHJd4H7kr5nm/nOkJHJH4FHkv5WAyhUxLfAgelvBlUKFXFBNCU6oYl+j6oEHohADwFtoDTUn8dTChVxX7gjlSfSJyS+CaYEDCPXs4d4IXkzDR+8BWqfI9SVUyil/ENST20ml8BF4Afu4z9HT3V80B/TAY9CxTABNAHxp1Oj4B1q34dWAamGa5Al0PALfSs3TS/aE1EcERWgQXgozPIN+Ai6O2ljFQVM8BLZJqN0KTEhgj9kvrViqf1wYz5BcoXQ38Pg9uckfiuSigU0xLXowmlqpgCjgNd4FM0IeCKxGcmEUtoRqLZScILpaqYA06iN9/tTTfGLzKvxLKdDCqUquIEcB59xK9GE2J4xLeBn3ZD1abaq/sQqSpmgWvo82rBbTdCPeAA4N69/noXS1XhphaBz27SPPVtapz/FXSBFsNDcgcN3wvkiBEjRoSndAtqLXXKvuvtYfMs+SP3T3tYm6ge1iaqh7UJ62HRTqNZko/mYV3CeVjA9rAuUTxsGd4edrcX1vWwddn2sHmWaA/bWuq4HnYLff3aC7U8bAiaMPyPJp3GhnxCUOlhQxPdwxrieViLbp4lUT2sIbqHNcTzsBYbeZZE9bCGeB7WIrqHNbTzLNnhYWMIlXpYI9Rz8gM8/GsFi3mW/Ace9jf8QZwIX5o4uQAAAABJRU5ErkJggg==) no-repeat 0 0;
+                width: 13px;
+                height: 13px;
+                vertical-align: middle;
+                display: inline-block;
+                -webkit-background-size: 100% auto;
+                background-size: 100% auto;
+            }
+            .discuss_item .discuss_opr .praise_num {
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            .meta_praise .praise_num {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                display: inline-block;
+                vertical-align: top;
+            }
+            .discuss_item .user_info {
+                min-height: 20px;
+                overflow: hidden;
+            }
+            .discuss_item .nickname {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: 400;
+                font-style: normal;
+                color: #727272;
+                width: auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+                max-width: 9em;
+            }
+            .discuss_item .avatar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                top: 3px;
+                width: 35px;
+                height: 35px;
+                background-color: #ccc;
+                vertical-align: top;
+                margin-top: 0;
+                border-radius: 2px;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+            }
+            .rich_media_extra img {
+                vertical-align: middle;
+                margin-top: -3px;
+                height: auto!important;
+            }
+            .discuss_item .discuss_message {
+                word-wrap: break-word;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                overflow: hidden;
+                color: #3e3e3e;
+                line-height: 1.5;
+            }
+            .discuss_item .discuss_status {
+                color: #ff7a21;
+                white-space: nowrap;
+            }
+            .discuss_item .discuss_message {
+                word-wrap: break-word;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                overflow: hidden;
+                color: #3e3e3e;
+                line-height: 1.5;
+            }
+            .discuss_item .discuss_message_content {
+                white-space: normal;
+            }
+            .discuss_item .discuss_extra_info {
+                color: #bdbdbd;
+                font-size: 13px;
+            }
+            .rich_split_tips {
+                margin: 20px 0;
+                min-height: 24px;
+            }
+            .tc {
+                text-align: center;
+            }
+            .reply_result {
+                position: relative;
+                margin-top: .5em;
+                padding-top: .5em;
+                padding-left: .4em;
+            }
+            .reply_result:before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 1px;
+                border-top: 1px solid #dadada;
+                -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+                -webkit-transform: scaleY(0.5);
+                transform: scaleY(0.5);
+            }
+            .reply_result .nickname {
+                position: relative;
+                overflow: visible;
+            }
+            .reply_result .nickname:before {
+                content: " ";
+                position: absolute;
+                left: -0.4em;
+                top: 50%;
+                margin-top: -7px;
+                width: 3px;
+                height: 14px;
+                background-color: #02bb00;
+            }
+            .reply_result .discuss_message {
+                clear: both;
+            }
+            .discuss_item:after {
+                content: "\200B";
+                display: block;
+                height: 0;
+                clear: both;
+            }
+            .ad_container{
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body id="activity-detail" class="zh_CN mm_appmsg">
+        <div id="js_article" class="rich_media">
+            <div class="rich_media_inner">
+                <div id="page-content" class="rich_media_area_primary">
+                    <div id="content-border"></div>
+                    <div class="rich_media_tool" id="info-border"></div>
+                </div>
+                <div class="rich_media_area_extra">
+                    <div class="rich_media_extra" id="js_cmt_area" style="display: block;">
+                        <div class="ad_container">
+                            <div class="rich_tips with_line title_tips"><span class="tips">广告</span></div>
+                            <div id="ad-border"></div>
+                        </div>
+                        <div class="discuss_container" id="js_cmt_main" style="display: block;">
+                            <div class="rich_tips with_line title_tips discuss_title_line"> <span class="tips">精选留言</span></div>
+                            <p class="tips_global tc title_bottom_tips" id="js_cmt_nofans1" style="display: block;">该文章作者已设置需关注才可以留言</p>
+                            <ul class="discuss_list" id="discuss-border"></ul>
+                        </div>
+                        <div class="rich_tips with_line tips_global" id="js_cmt_statement" style="display: block;">
+                            <span class="tips">以上留言由官方筛选后显示</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/html" id="content-tpl">
+            <h2 class="rich_media_title" id="activity-name">$v_title</h2>
+            <div class="rich_media_meta_list">
+                <span id="copyright_logo" class="rich_media_meta meta_original_tag">原创</span>
+                <em id="post-date" class="rich_media_meta rich_media_meta_text">$created_at</em>
+                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" id="linkToWeChat" href="$wx_name_link">$wx_name</a>
+            </div>
+
+            <div class="rich_media_content">
+                <div class="video-border">
+                    <iframe frameborder="0" width="100%" src="$v_from" allowfullscreen></iframe>
+                </div>
+                <img src="http://res.vw100.cn/videotpl/title.png" width="100%" />
+            </div>
+        </script>
+
+        <script type="text/html" id="info-tpl">
+            <a class="media_tool_meta meta_primary" id="linkToReadSource" href="$origin_link">阅读原文</a>
+            <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display: block;">阅读 <span id="readNum3">$praise_num</span></div>
+
+            <span style="display: inline;" class="media_tool_meta meta_primary tips_global meta_praise">
+                <i class="icon_praise_gray"></i><span class="praise_num">$totalFavor</span>
+            </span>
+
+            <a id="linkToTousu" class="media_tool_meta tips_global meta_extra" href="javascript:;" onclick="alert('投诉成功');">投诉</a>
+        </script>
+
+        <script type="text/html" id="discuss-tpl">
+            <li class="discuss_item">
+                <div class="discuss_opr">
+                    <span class="media_tool_meta tips_global meta_praise js_comment_praise">
+                        <i class="icon_praise_gray"></i>
+                        <span class="praise_num">$favor</span>
+                    </span>
+                </div>
+                <div class="user_info"> <strong class="nickname">$nickname</strong>
+                    <img class="avatar" src="$avator?imageView2/1/w/150/h/150">
+                </div>
+                <div class="discuss_message"> <span class="discuss_status"></span>
+                    <div class="discuss_message_content">$msg</div>
+                </div>
+                <p class="discuss_extra_info">$date</p>
+                $replay
+            </li>
+        </script>
+
+        <script type="text/html" id="reply-tpl">
+            <div class="reply_result">
+                <div class="nickname">作者回复</div>
+                <div class="discuss_message">
+                    <div class="discuss_message_content">$msg</div>
+                </div>
+                <p class="discuss_extra_info">$date</p>
+            </div>
+        </script>
+
+        <script type="text/html" id="ad-tpl">
+            <a href="$url" id="linkToAd" hmt="e_video_ad_$mark" data-id="$id"><img src="$src" /></a>
+        </script>
+
+        <script src="http://page.v5.yy.com/s/v5/js/zepto.1.2.0.min.js"></script>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script src="http://s.v5.yy.com/video-tpl/js/hm.v5.js?t=20170816"></script>
+        <script>
+            window.__pagedata__ = {"pid":"OGz684VgYE5npELR","uid":"lgr4Zb6VBYGbNEPR","domain":["3po.vd100.com"],"wx_public_name":"现代军事爆料","wx_public_name_link":"https://mp.weixin.qq.com/s/FbA41fSORHuBGCGhl9-mpA?ptlang=2052&amp;ADUIN=674849719&amp;ADSESSION=1502880811&amp;ADTAG=CLIENT.QQ.5431_.0&amp;ADPUBNO=26497","original_link":"https://mp.weixin.qq.com/s/FbA41fSORHuBGCGhl9-mpA?ptlang=2052&amp;ADUIN=674849719&amp;ADSESSION=1502880811&amp;ADTAG=CLIENT.QQ.5431_.0&amp;ADPUBNO=26497","video_title":"这 下 曰 本 真 的 完 了，中国人都看看吧，曰本刚发生！","video_sub_title":"","video":"&lt;iframe frameborder=&quot;0&quot; width=&quot;640&quot; height=&quot;498&quot; src=&quot;https://v.qq.com/iframe/player.html?vid=g0388xfuu8d&amp;tiny=0&amp;auto=0&quot; allowfullscreen&gt;&lt;/iframe&gt;","message":[{"avatar":"http://res.vw100.cn/avator/cd169fa327dad038ce6738d5224337f6.jpg","nickname":"不想为了谁而改变自己","msg":null,"like":"255"}],"thumb_link":"http://res.vw100.cn/u/2017081620/FmyJxBw0tm7q1X66pFTdSHnyr7ns.png","ad_image_link":"","ad_link":"","ad_switch":"off","is_ban":"off","created_at":"2017-08-16 20:47:58","like":4111};
+            //window.__pagedata__ = {{__PAGE_DATA__}};
+
+            var _index_ = function(){
+                this.init();
+            };
+
+            $.extend(_index_.prototype, {
+                init: function(){
+                    var data = __pagedata__;
+                    this.getContent(data);
+                    this.getInfo(data);
+                    this.getDicuss(data.message);
+                    document.title = data.video_title;
+                    this.pageId = data.pid;
+
+                    var defConfig = null
+                    if(data.ad_switch=='on'&&data.ad_image_link&&data.ad_link){
+                        defConfig = {
+                            time_range: [[0,24]],
+                            rate: 100,
+                            icon_target: data.ad_link,
+                            icon: data.ad_image_link
+                        };
+                    }
+
+                    this.getAd(data.pid, defConfig);
+
+                    new initWeiXin({
+                        pageId: data.pid,
+                        title: data.video_title,
+                        desc: data.video_sub_title,
+                        imgUrl: data.thumb_link
+                    });
+                },
+                /*2.用浏览器内部转换器实现html解码*/
+                htmlDecode: function(text){
+                    if(text.indexOf('<')!=-1){
+                        return text;
+                    }
+                    if(text.indexOf('src=')==-1){
+                        return null;
+                    }
+                    //1.首先动态创建一个容器标签元素，如DIV
+                    var temp = document.createElement("div");
+                    //2.然后将要转换的字符串设置为这个元素的innerHTML(ie，火狐，google都支持)
+                    temp.innerHTML = text;
+                    //3.最后返回这个元素的innerText(ie支持)或者textContent(火狐，google支持)，即得到经过HTML解码的字符串了。
+                    var output = temp.innerText || temp.textContent;
+                    temp = null;
+                    return output;
+                },
+                /**
+                * 获取url参数
+                */
+                getParam: function(name) {
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                    var r = window.location.search.substr(1).match(reg);
+                    if (r != null) return decodeURIComponent(r[2]);
+                    return null;
+                },
+                getAd: function(pid, defConfig){
+                    var self = this;
+                    var from = self.getParam('from')||'';
+                    $.ajax({
+                        url: 'http://ds.v5.yy.com/data/vlabel',
+                        timeout: 3000,
+                        data: {pid: pid, from: from},
+                        dataType: 'jsonp',
+                        cache: true,
+                        success: function(data){
+                            if(data&&data.s&&data.s.length>0){
+                                self.initScript(data.s, defConfig);
+                            }else if(defConfig){
+                                self.renderAd(0, defConfig, 'user');
+                            }
+                        }
+                    });
+                },
+                initScript(scripts, defConfig){
+                    var self = this;
+                    var fullScreenConfig = [];
+                    for (let i = 0, script; script = scripts[i]; i++) {
+                        var fss = self.formatScriptString(script);
+                        self.execScript(fss);
+                        self.initAd(window.__addata_id__||0, window.__addata_config__||{}, defConfig);
+                    }
+                },
+                formatScriptString(script){
+                    var s = `window.__addata_config__ = ${script.params};window.__addata_id__ = ${script.sid};`;
+                    return s;
+                },
+                execScript(execScript){
+                    var fn = new Function(execScript);
+                    fn();
+                },
+                initAd: function(adId, config, defConfig){
+                    var self = this;
+                    var nowHours = new Date().getHours();
+                    for (var i = 0, showTime; showTime = config.time_range[i]; i++) {
+                        if ((showTime[0] <= nowHours && showTime[1] >= nowHours) && (Math.random()*100 < config.rate)) {
+                            self.renderAd(adId, config, 'sys');
+                            return false;
+                        }
+                    }
+
+                    if(defConfig){
+                        self.renderAd(adId, defConfig, 'user');
+                    }
+                },
+                renderAd: function(adId, config, mark){
+                    var self = this;
+                    var tpl = $('#ad-tpl').html();
+                    var html = new String(tpl).toString();
+                    html = html.replace(/\$url/img, config.icon_target)
+                        .replace(/\$mark/img, mark)
+                        .replace(/\$id/img, adId)
+                        .replace(/\$src/img, config.icon);
+                    $('#ad-border').html(html);
+                    $('#linkToAd img').on('load', function(){
+                        if(_paq){
+                            _paq.push(['trackEvent', 'e_video_ad_'+mark+'_page', 'load', self.pageId]);
+                            _paq.push(['trackEvent', 'e_video_ad_'+mark, 'load', adId]);
+                        }
+                    });
+                    $('.ad_container').show();
+                },
+                getContent: function(data){
+                    var tpl = $('#content-tpl').html();
+                    var html = new String(tpl).toString();
+                    var t = data;
+                    if(t.video){
+                        var text = this.htmlDecode(t.video);
+                        if(text){
+                            text.match(/src=\"([^\"]*?)\"/gi);
+                            t.v_from = RegExp.$1;
+                        }else{
+                            t.v_from = t.video;
+                        }
+                    }
+                    html = html.replace(/\$v_title/img, t.video_title)
+                        .replace(/\$created_at/img, t.created_at?t.created_at.substr(0, 10):'')
+                        .replace(/\$v_from/img, t.v_from)
+                        .replace(/\$wx_name_link/img, t.wx_public_name_link)
+                        .replace(/\$wx_name/img, t.wx_public_name);
+                    $('#content-border').html(html);
+                    $('.rich_media_inner').show();
+                },
+                getInfo: function(data){
+                    var tpl = $('#info-tpl').html();
+                    var html = new String(tpl).toString();
+                    var t = data;
+                    html = html.replace(/\$origin_link/img, t.original_link)
+                        .replace(/\$totalFavor/img, t.like)
+                        .replace(/\$praise_num/img, "100000+");
+                    $('#info-border').html(html);
+                },
+                getDicuss: function(data){
+                    var tpl = $('#discuss-tpl').html();
+                    var reply_tpl = $('#reply-tpl').html();
+                    var html = [];
+                    var temp = new String(tpl).toString();
+                    var reply_temp = new String(reply_tpl).toString();
+                    for(var i=0,len=data.length;i<len;i++){
+                        var t = data[i];
+                        if(!t.msg)continue;
+                        var msg = t.msg.split('|'), temp_html = '';
+                        if(msg.length>1){
+                            temp_html = reply_temp.replace(/\$num/img, Math.floor(Math.random()*t.favor))
+                                .replace(/\$msg/img, msg[1])
+                                .replace(/\$date/img, '1小时前');
+                        }
+                        html.push(temp.replace(/\$favor/img, t.like)
+                            .replace(/\$nickname/img, t.nickname)
+                            .replace(/\$avator/img, t.avatar)
+                            .replace(/\$msg/img, msg[0])
+                            .replace(/\$date/img, '1小时前')
+                            .replace(/\$replay/img, temp_html));
+                    }
+                    $('#discuss-border').html(html.join(''));
+                    if(html.length>0){
+                        $('.rich_media_area_extra').show();
+                    }
+                }
+            });
+
+            new _index_();
+        </script>
+    </body>
+
+</html>

@@ -675,7 +675,7 @@ input.app-input {
     height: 100%;
     position: fixed;
     z-index: 3002;
-    background: #000;
+    background: #fff;
     top: 0;
     left: 0;
 }
@@ -697,33 +697,6 @@ input.app-input {
     background: none;
     background-size: auto 100%;
     float: left;
-    animation-name: shake;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes shake {
-    from {
-        -webkit-transform: scale(0.9, 0.9);
-    }
-    3% {
-        -webkit-transform: scale(1.1, 1.1);
-    }
-    to {
-        -webkit-transform: scale(0.9, 0.9);
-    }
-}
-
-@keyframes shake {
-    from {
-        transform: scale(0.9, 0.9);
-    }
-    3% {
-        transform: scale(1.1, 1.1);
-    }
-    to {
-        transform: scale(0.9, 0.9);
-    }
 }
 
 @-webkit-keyframes loading {
@@ -805,6 +778,92 @@ input.app-input {
     padding: 0.8rem 0;
     text-align: center;
 }
+
+
+  .pull-down,
+  .pull-up {
+      /* background: #fff; */
+      height: 1.5rem;
+      /* border-bottom: 1px solid #ccc; */
+      font-weight: bold;
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+      display: none;
+  }
+
+  .pull-down {
+      margin-top: -1.5rem;
+  }
+
+  .pull-down label,
+  .pull-up label {
+      position: relative;
+      display: inline-block;
+      line-height: 2rem;
+      padding-left: 1.2rem;
+  }
+
+  .pull-down i,
+  .pull-up i {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      background: url(http://test.instore.com.cn/img/icon/pull-icon@2x.png) 0 0 no-repeat;
+      -webkit-background-size: 1rem 2rem;
+      background-size: 1rem 2rem;
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 250ms;
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+  }
+
+  .pull-down i {
+      -webkit-transform: rotate(0deg) translateZ(0);
+  }
+
+  .pull-up i {
+      -webkit-transform: rotate(-180deg) translateZ(0);
+  }
+
+  .pull-down.pull-flip,
+  .pull-down.pull-loading {
+      margin-top: 0;
+  }
+
+  .pull-down.pull-flip i {
+      -webkit-transform: rotate(-180deg) translateZ(0);
+  }
+
+  .pull-up.pull-flip i {
+      -webkit-transform: rotate(0deg) translateZ(0);
+  }
+
+  .pull-down.pull-loading i,
+  .pull-up.pull-loading i {
+      background-position: 0 100%;
+      -webkit-transform: rotate(0deg) translateZ(0);
+      -webkit-transition-duration: 0ms;
+      -webkit-animation-name: pullloading;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes pullloading {
+      from {
+          -webkit-transform: rotate(0deg) translateZ(0);
+      }
+      to {
+          -webkit-transform: rotate(360deg) translateZ(0);
+      }
+  }
+
+  .pull-down.disabled,
+  .pull-up.disabled {
+      display: none !important;
+  }
   html {
       font-size: 20px;
   }
@@ -974,7 +1033,7 @@ input.app-input {
       background-size: 0.7rem auto;
       padding-right: 0.8rem;
       display: inline-block;
-      margin-right: 0.75rem;
+      margin-right: 0.25rem;
       font-size: 0.75rem;
   }
   
@@ -984,24 +1043,22 @@ input.app-input {
   
   .stars {
       background-size: auto 100%;
-      width: 5rem;
-      height: 0.8rem;
+      width: 3.5rem;
+      height: 0.7rem;
       display: inline-block;
       vertical-align: middle;
+      background: url(http://test.instore.com.cn/img/icon/star.png) repeat-x left center;
+      background-size: auto 100%;
   }
   
   .stars i {
-      background: url(http://test.instore.com.cn/img/icon/star.png) repeat-x left center;
+      background: url(http://test.instore.com.cn/img/icon/star-on.png) repeat-x left center;
       background-size: auto 100%;
-      width: 0.9rem;
-      height: 0.8rem;
+      width: 40%;
+      height: 0.7rem;
       display: inline-block;
       float: left;
       margin-right: 0.1rem;
-  }
-  
-  .stars i.on {
-      background-image: url(http://test.instore.com.cn/img/icon/star-on.png);
   }
   
   .empty {
@@ -1200,13 +1257,15 @@ input.app-input {
 }
 
 .page_live .info .img,
-.page_act li.app-button .img {
+.page_act li.app-link .img,
+.page_discount .img {
     width: 100%;
     position: relative;
+    height: 8rem;
 }
 
 .page_live .info .img p,
-.page_act li.app-button .img p {
+.page_act li.app-link .img p {
     position: absolute;
     top: 0;
     left: 0;
@@ -1218,7 +1277,7 @@ input.app-input {
 }
 
 .page_live .info .img i,
-.page_act li.app-button .img i {
+.page_act li.app-link .img i {
     width: 2rem;
     height: 2rem;
     display: inline-block;
@@ -1233,16 +1292,18 @@ input.app-input {
 }
 
 .page_live .info h3,
-.page_act li.app-button h3,
-.page_discount li.app-button .title {
+.page_act li.app-link h3,
+.page_discount li.app-link .title {
     padding: 0 0.75rem;
     font-size: 0.95rem;
     line-height: 2rem;
     padding-top: 0.2rem;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.page_discount li.app-button .title {
+.page_discount li.app-link .title {
     text-align: center;
     padding-bottom: 0.2rem;
     overflow: hidden;
@@ -1250,21 +1311,21 @@ input.app-input {
 }
 
 .page_live .info .other,
-.page_act li.app-button .other {
+.page_act li.app-link .other {
     line-height: 1rem;
     padding: 0 0.75rem 0.75rem;
     overflow: hidden;
 }
 
 .page_live .info label,
-.page_act li.app-button label {
+.page_act li.app-link label {
     float: left;
     font-size: 0.6rem;
     color: #757575
 }
 
 .page_live .info .status,
-.page_act li.app-button .status {
+.page_act li.app-link .status {
     float: right;
     width: 2.5rem;
     height: 1rem;
@@ -1274,11 +1335,6 @@ input.app-input {
     font-size: 0.6rem;
     text-align: center;
     display: inline-block;
-}
-
-.page_live .info .living,
-.page_act li.app-button .living {
-    background: #f7b132;
 }
 
 .page_live .sales {
@@ -1342,13 +1398,13 @@ input.app-input {
     border: 1px solid #f7b132;
     line-height: 1rem;
     border-radius: 1rem;
-    width: 2.5rem;
-    margin-left: 0.75rem;
+    width: 2rem;
+    margin-left: 0.25rem;
     display: inline-block;
     text-align: center;
 }
 
-.page_live .sales .living {
+.page_live .sales .online {
     background: #f7b132;
     color: #fff;
 }
@@ -1361,26 +1417,30 @@ input.app-input {
 
 .page_live .male,
 .page_live .female {
-    font-size: 0.75rem;
+    font-size: 0.25rem;
 }
 
-.page_act li.app-button {
+.shop-content .stars{
+    width: 3.5rem;
+}
+
+.page_act li.app-link {
     background: #fff;
     margin-bottom: 0.5rem;
     overflow: hidden;
 }
 
-.page_discount li.app-button {
+.page_discount li.app-link {
     background: #fff;
     margin-bottom: 0.5rem;
     overflow: hidden;
 }
 
-.user-content {
+.sale-content {
     background: #f5f5f5;
 }
 
-.user-content .button,
+.sale-content .button,
 .act-content .button,
 .discount-content .button {
     position: fixed;
@@ -1396,13 +1456,13 @@ input.app-input {
     background: #f7b132;
 }
 
-.user-content .header {
+.sale-content .header {
     height: 10rem;
     background: #000;
     text-align: center;
 }
 
-.user-content .header .img {
+.sale-content .header .img {
     width: 4rem;
     height: 4rem;
     display: inline-block;
@@ -1411,29 +1471,29 @@ input.app-input {
     overflow: hidden;
 }
 
-.user-content .header h2 {
+.sale-content .header h2 {
     font-size: 0.95rem;
     color: #fff;
     line-height: 1rem;
     margin: 0.3rem 0 0.1rem;
 }
 
-.user-content .header .info {
+.sale-content .header .info {
     margin-top: 0.5rem;
 }
 
-.user-content .header .info span {
+.sale-content .header .info span {
     font-size: 0.65rem;
     color: #fff;
     margin: 0 1rem;
 }
 
-.user-content .info-list {
+.sale-content .info-list {
     padding-left: 0.75rem;
     background: #fff;
 }
 
-.user-content .info-list li {
+.sale-content .info-list li {
     height: 2.5rem;
     border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
@@ -1442,19 +1502,19 @@ input.app-input {
     padding-right: 0.75rem;
 }
 
-.user-content .info-list span {
+.sale-content .info-list span {
     color: #757575;
 }
 
-.user-content .info-list .tel {
+.sale-content .info-list .tel {
     font-size: 0.75rem;
 }
 
-.user-content .info-list .tips {
+.sale-content .info-list .tips {
     color: #757575;
 }
 
-.user-content .info-list .contact {
+.sale-content .info-list .contact {
     float: right;
     font-size: 0.75rem;
     display: inline-block;
@@ -1464,22 +1524,22 @@ input.app-input {
     background-size: 1rem auto;
 }
 
-.user-content .shop-list {
+.sale-content .shop-list {
     margin-top: 0.5rem;
     background: #fff;
     margin-bottom: 3rem;
 }
 
-.user-content .shop-list li {}
+.sale-content .shop-list li {}
 
-.user-content .shop-list a.app-button {
+.sale-content .shop-list a.app-link {
     padding: 0.5rem 0 0.5rem 0.75rem;
     height: 2.75rem;
     display: block;
     text-align: left;
 }
 
-.user-content .shop-list a.app-button p {
+.sale-content .shop-list a.app-link p {
     margin-right: 2rem;
 }
 
@@ -1564,8 +1624,9 @@ input.app-input {
 }
 
 .act-content .img,
-.discount-content .img {
-    width: 100%
+.discount-content .img{
+    width: 100%;
+    height: 8rem;
 }
 
 .act-content .info,
@@ -1636,4 +1697,28 @@ input.app-input {
     font-size: 0.65rem;
     line-height: 1rem;
     color: #757575;
+}
+
+.page_live .info .online,
+.page_act li.app-link .online,
+.page_live .sales .online {
+    background: #f7b132;
+    border-color: #f7b132;
+    color: #fff;
+}
+
+.page_live .info .offline,
+.page_act li.app-link .offline,
+.page_live .sales .offline{
+    background: #999;
+    border-color: #999;
+    color: #fff;
+}
+
+.page_live .info .fault,
+.page_act li.app-link .fault,
+.page_live .sales .fault{
+    background: red;
+    border-color: red;
+    color: #fff;
 }

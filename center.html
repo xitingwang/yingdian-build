@@ -27,17 +27,11 @@
     </div>
     <div class="app-page" data-page="center">
         <div class="app-topbar">
-            <a class="app-button left" href="javascript:history.go(-1)"></a>
+            <a class="app-button left" href="index.html"></a>
             <div class="app-title">我的</div>
         </div>
         <div class="app-content center-content" id="center-content">
-            <div class="user-info">
-                <div class="img"><img src="http://test.instore.com.cn/img/user-1.jpg" /></div>
-                <p>
-                    <strong>用户姓名</strong>
-                    <span class="edit app-button" data-target="edit">未设置姓名</span><br />
-                    <label>手机：13560072566</label>
-                </p>
+            <div class="user-info" id="user-info">
             </div>
             <div class="menu-list">
                 <ul>
@@ -84,7 +78,7 @@
         </div>
         <div class="app-content edit-content" id="edit-content">
             <div class="edit-input">
-                <input type="text" id="txt-name" value="张先生" />
+                <input type="text" id="txt-name" value="" />
                 <span class="delete"></span>
             </div>
             <div class="actions">
@@ -101,10 +95,6 @@
             <div class="evaluate-item">
                 <label>服务态度</label>
                 <span class="stars">
-                    <i class="on"></i>
-                    <i class="on"></i>
-                    <i class="on"></i>
-                    <i></i>
                     <i></i>
                 </span>
             </div>
@@ -112,19 +102,11 @@
                 <label>专业知识</label>
                 <span class="stars">
                     <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
                 </span>
             </div>
             <div class="evaluate-item">
                 <label>讲解技巧</label>
                 <span class="stars">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
                     <i></i>
                 </span>
             </div>
@@ -139,33 +121,13 @@
             <div class="app-title">我的收藏</div>
         </div>
         <div class="app-content fav-content" id="fav-content">
-            <div class="empty">
-                <div class="icon icon-fav"></div>
-                <p>还没有收藏哦！</p>
+            <div class="pull-down pull-down-active">
+                <label><i></i><span>下拉刷新...</span></label>
             </div>
-            <ul>
-                <li>
-                    <span class="on">已收藏</span>
-                    <p>
-                        <strong>雪弗兰黄埔大道店</strong><br />
-                        <label>广州天河区黄埔大道196号</label>
-                    </p>
-                </li>
-                <li>
-                    <span class="to-fav">收藏</span>
-                    <p>
-                        <strong>雪弗兰黄埔大道店</strong><br />
-                        <label>广州天河区黄埔大道196号</label>
-                    </p>
-                </li>
-                <li>
-                    <span class="to-fav">收藏</span>
-                    <p>
-                        <strong>雪弗兰黄埔大道店</strong><br />
-                        <label>广州天河区黄埔大道196号</label>
-                    </p>
-                </li>
-            </ul>
+            <div id="fav-list"></div>
+            <div class="pull-up pull-up-active">
+                <label><i></i><span>上拉加载更多...</span></label>
+            </div>
         </div>
     </div>
     <div class="app-page" data-page="coupons">
@@ -173,69 +135,7 @@
             <div class="app-button left" data-back></div>
             <div class="app-title">我的优惠券</div>
         </div>
-        <div class="app-content coupons-content" id="coupons-content">
-            <div class="empty">
-                <div class="icon icon-coupon"></div>
-                <p>还没有优惠券哦！</p>
-            </div>
-            <ul>
-                <li class="app-button" data-target="coupon" data-target-args='{"id":1}'>
-                    <div class="title">
-                        <strong>活动优惠券</strong>
-                        <span><em>¥</em>1000</span>
-                    </div>
-                    <div class="info">
-                        有效期：2017/12/1-2017/12/31
-                    </div>
-                    <div class="other">
-                        使用范围：广州某某4s店是代理反馈速度速度是多少反馈速度速度反馈速度速度
-                    </div>
-                </li>
-                <li class="app-button" data-target="coupon" data-target-args='{"id":1}'>
-                    <div class="title">
-                        <strong>活动优惠券</strong>
-                        <span><em>¥</em>1000</span>
-                    </div>
-                    <div class="info">
-                        有效期：2017/12/1-2017/12/31
-                    </div>
-                    <div class="other">
-                        使用范围：广州某某4s店是代理反馈速度速度是多少
-                    </div>
-                </li>
-            </ul>
-            <ul class="expire">
-                <li class="link-more">
-                    <span>查看失效的优惠券</span>
-                </li>
-                <li class="app-button" data-target="coupon" data-target-args='{"id":1}'>
-                    <i class="expire-icon"></i>
-                    <div class="title">
-                        <strong>活动优惠券</strong>
-                        <span><em>¥</em>1000</span>
-                    </div>
-                    <div class="info">
-                        有效期：2017/12/1-2017/12/31
-                    </div>
-                    <div class="other">
-                        使用范围：广州某某4s店是代理反馈速度速度是多少
-                    </div>
-                </li>
-                <li class="app-button" data-target="coupon" data-target-args='{"id":1}'>
-                    <i class="used-icon"></i>
-                    <div class="title">
-                        <strong>活动优惠券</strong>
-                        <span><em>¥</em>1000</span>
-                    </div>
-                    <div class="info">
-                        有效期：2017/12/1-2017/12/31
-                    </div>
-                    <div class="other">
-                        使用范围：广州某某4s店是代理反馈速度速度是多少
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <div class="app-content coupons-content" id="coupons-content"></div>
     </div>
     <div class="app-page" data-page="coupon">
         <div class="app-topbar">
@@ -243,27 +143,7 @@
             <div class="app-title">优惠券详情</div>
         </div>
         <div class="app-content coupon-content" id="coupon-content">
-            <div class="coupon-info">
-                <div class="title">
-                    <strong>活动优惠券</strong>
-                    <span><em>¥</em>1000</span>
-                </div>
-                <div class="info">
-                    有效期：2017/12/1-2017/12/31
-                </div>
-                <div class="qrcode">
-                    <span class="img"><img src="http://test.instore.com.cn/img/qrcode.png" /></span><br />
-                    <strong>MP9EV6B3CEB5</strong>
-                </div>
-                <div class="detail">
-                    <p>
-                        使用范围：广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；广州某某4s店；
-                    </p>
-                    <p class="other">
-                        使用说明：优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明优惠券使用说明
-                    </p>
-                </div>
-            </div>
+            <div class="coupon-info" id="coupon-info"></div>
         </div>
     </div>
     <div class="app-page" data-page="messages">
@@ -272,49 +152,14 @@
             <a href="javascript:;" id="link-delete">删除</a>
             <div class="app-title">我的消息</div>
         </div>
-        <div class="app-content messages-content delete" id="messages-content">
-            <div class="header">
-                <input type="checkbox" id="chb-all" />
-                <label for="chb-all">全选</label>
+        <div class="app-content messages-content" id="messages-content">
+            <div class="pull-down pull-down-active">
+                <label><i></i><span>下拉刷新...</span></label>
             </div>
-            <ul>
-                <li>
-                    <input type="checkbox" name="chb-message" value="1" />
-                    <div class="app-button" data-target="message" data-target-args='{"id":1}'>
-                        <div class="title">
-                            <strong>消息标题</strong>
-                            <span>07/15 23:00</span>
-                        </div>
-                        <div class="intro">
-                            倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直平台直播管理规定倡导绿色直平台直播管理规定倡导绿色直平台直播管理规定倡导绿色直播，平台直播管理规定
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="chb-message" value="1" />
-                    <div class="app-button" data-target="message" data-target-args='{"id":1}'>
-                        <div class="title">
-                            <strong>消息标题</strong>
-                            <span>07/15 23:00</span>
-                        </div>
-                        <div class="intro">
-                            倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="chb-message" value="1" />
-                    <div class="app-button" data-target="message" data-target-args='{"id":1}'>
-                        <div class="title">
-                            <strong>消息标题</strong>
-                            <span>07/15 23:00</span>
-                        </div>
-                        <div class="intro">
-                            倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div id="messages-list"></div>
+            <div class="pull-up pull-up-active">
+                <label><i></i><span>上拉加载更多...</span></label>
+            </div>
         </div>
     </div>
     <div class="app-page" data-page="message">
@@ -322,16 +167,7 @@
             <div class="app-button left" data-back></div>
             <div class="app-title">消息</div>
         </div>
-        <div class="app-content message-content" id="message-content">
-            <h2>消息标题消息标题</h2>
-            <div class="time">
-                07/15 23:00
-            </div>
-            <div class="detail">
-                倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定
-                <img src="http://test.instore.com.cn/img/temp-2.jpg" /> 倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定倡导绿色直播，平台直播管理规定
-            </div>
-        </div>
+        <div class="app-content message-content" id="message-content"></div>
     </div>
     <div class="app-page" data-page="payrecord">
         <div class="app-topbar">
@@ -339,39 +175,13 @@
             <div class="app-title">付款记录</div>
         </div>
         <div class="app-content payrecord-content" id="payrecord-content">
-            <h3>
-                <strong>2017/7月</strong>
-                <div>
-                    <label>支出</label>
-                    <span><em>¥</em>1000</span>
-                </div>
-            </h3>
-            <ul>
-                <li>
-                    <span class="img"><img src="http://test.instore.com.cn/img/gift/gift-1.png" /></span>
-                    <em>-2.00</em>
-                    <p>
-                        <strong>礼物<span>666</span></strong><br />
-                        <label>2017/07/30 13:20:26</label>
-                    </p>
-                </li>
-                <li>
-                    <span class="img"><img src="http://test.instore.com.cn/img/gift/gift-2.png" /></span>
-                    <em>-2.00</em>
-                    <p>
-                        <strong>礼物<span>666</span></strong><br />
-                        <label>2017/07/30 13:20:26</label>
-                    </p>
-                </li>
-                <li>
-                    <span class="img"><img src="http://test.instore.com.cn/img/gift/gift-3.png" /></span>
-                    <em>-2.00</em>
-                    <p>
-                        <strong>礼物<span>666</span></strong><br />
-                        <label>2017/07/30 13:20:26</label>
-                    </p>
-                </li>
-            </ul>
+            <div class="pull-down pull-down-active">
+                <label><i></i><span>下拉刷新...</span></label>
+            </div>
+            <div id="payrecord-list"></div>
+            <div class="pull-up pull-up-active">
+                <label><i></i><span>上拉加载更多...</span></label>
+            </div>
         </div>
     </div>
     <div class="app-page" data-page="looked">
@@ -379,69 +189,7 @@
             <div class="app-button left" data-back></div>
             <div class="app-title">我看过的直播</div>
         </div>
-        <div class="app-content looked-content" id="looked-content">
-            <div class="empty">
-                <div class="icon icon-looked"></div>
-                <p>还没有看过直播哦！</p>
-            </div>
-            <h3>今天</h3>
-            <ul>
-                <li>
-                    <div class="img"><img src="http://test.instore.com.cn/img/temp-5.jpg" /></div>
-                    <div class="info">
-                        <div class="title">
-                            <span class="male">徐志强</span>
-                            <span class="stars">
-                                <i class="on"></i>
-                                <i class="on"></i>
-                                <i class="on"></i>
-                                <i></i>
-                                <i></i>
-                            </span>
-                        </div>
-                        <div class="intro">
-                            从事汽车工作13年，有丰富的看车经验。
-                        </div>
-                        <div class="other">
-                            品牌：雪弗兰
-                        </div>
-                        <a href="#" class="link-btn app-button" data-target="evaluate" data-target-args='{"id":1}'>评价</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="img"><img src="http://test.instore.com.cn/img/temp-5.jpg" /></div>
-                    <div class="info">
-                        <div class="title">
-                            <span class="female">活动名称</span>
-                        </div>
-                        <div class="intro">
-                            从事汽车工作13年，有丰富的看车经验。
-                        </div>
-                        <div class="other">
-                            品牌：雪弗兰
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <h3>2017/07/21</h3>
-            <ul>
-                <li>
-                    <div class="img"><img src="http://test.instore.com.cn/img/temp-5.jpg" /></div>
-                    <div class="info">
-                        <div class="title">
-                            <span>店铺名称</span>
-                        </div>
-                        <div class="intro">
-                            广州市天河区黄埔大道196号
-                        </div>
-                        <div class="other">
-                            品牌：雪弗兰
-                        </div>
-                        <a href="#" class="link-btn link-fav">收藏</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <div class="app-content looked-content" id="looked-content"></div>
     </div>
 
     <div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>

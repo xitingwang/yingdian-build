@@ -28,17 +28,10 @@
     <div class="app-page" data-page="shop">
         <div class="app-topbar">
             <a class="app-button left" href="javascript:history.go(-1)"></a>
-            <div class="app-title">雪弗兰黄埔店</div>
+            <div class="app-title" id="shop-title"></div>
         </div>
         <div class="app-content shop-content" id="shop-content">
-            <div class="shop-info">
-                <div class="shop-logo img"><img src="http://test.instore.com.cn/img/logo/ford.png" /></div>
-                <span class="fav-icon on">已收藏</span>
-                <p>
-                    <strong>广州丰田黄埔大道店</strong><br />
-                    <label class="address">广州市天河区黄埔大道靠近道靠近道靠近事实上196号</label>
-                </p>
-            </div>
+            <div class="shop-info" id="shop-info"></div>
             <div class="buttons-tab">
                 <a href="#live" class="tab-link button tab_live active">
                     <span class="icon-live">直播</span>
@@ -54,145 +47,23 @@
                 <!--直播-->
                 <div class="tab page_live active">
                     <div class="scroller" id="page_live">
-                        <a class="info" href="live.html?id=1">
-                            <div class="img">
-                                <img src="http://test.instore.com.cn/img/temp-1.jpg" />
-                                <p></p>
-                                <i></i>
-                            </div>
-                            <h3>活动主题活动主题活动主题活动主题</h3>
-                            <div class="other">
-                                <label>6000人正在观看直播</label>
-                                <span class="status living">直播中</span>
-                            </div>
-                        </a>
+                        <div id="room-info"></div>
                         <div class="sales">
                             <h3>找销售看车</h3>
-                            <ul>
-                                <li class="app-button" data-target="user" data-target-args='{"id":1}'>
-                                    <div class="img"><img src="http://test.instore.com.cn/img/user-1.jpg" /></div>
-                                    <span class="arrow-right"></span>
-                                    <p>
-                                        <strong class="male">徐志强</strong>
-                                        <span class="stars">
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i></i>
-                                            <i></i>
-                                        </span>
-                                        <span class="status living">直播中</span>
-                                        <label>从事汽车工作13年，有丰富的看车经验。</label>
-                                    </p>
-                                </li>
-                                <li class="app-button" data-target="user" data-target-args='{"id":1}'>
-                                    <div class="img"><img src="http://test.instore.com.cn/img/user-1.jpg" /></div>
-                                    <span class="arrow-right"></span>
-                                    <p>
-                                        <strong class="male">徐志强</strong>
-                                        <span class="stars">
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i></i>
-                                            <i></i>
-                                        </span>
-                                        <span class="status outline">离线</span><br />
-                                        <label>从事汽车工作13年，有丰富的看车经验。</label>
-                                    </p>
-                                </li>
-                                <li class="app-button" data-target="user" data-target-args='{"id":1}'>
-                                    <div class="img"><img src="http://test.instore.com.cn/img/user-1.jpg" /></div>
-                                    <span class="arrow-right"></span>
-                                    <p>
-                                        <strong class="male">徐志强</strong>
-                                        <span class="stars">
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i></i>
-                                            <i></i>
-                                        </span>
-                                        <span class="status online">在线</span><br />
-                                        <label>从事汽车工作13年，有丰富的看车经验。</label>
-                                    </p>
-                                </li>
-                                <li class="app-button" data-target="user" data-target-args='{"id":1}'>
-                                    <div class="img"><img src="http://test.instore.com.cn/img/user-1.jpg" /></div>
-                                    <span class="arrow-right"></span>
-                                    <p>
-                                        <strong class="male">徐志强</strong>
-                                        <span class="stars">
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i class="on"></i>
-                                            <i></i>
-                                            <i></i>
-                                        </span>
-                                        <span class="status living">直播中</span><br />
-                                        <label>从事汽车工作13年，有丰富的看车经验。</label>
-                                    </p>
-                                </li>
-                            </ul>
+                            <ul id="sale-list"></ul>
                         </div>
                     </div>
                 </div>
                 <!--活动-->
                 <div class="tab page_act">
                     <div class="scroller" id="page_act">
-                        <ul>
-                            <li class="app-button" data-target="act" data-target-args='{"id":1}'>
-                                <div class="img">
-                                    <img src="http://test.instore.com.cn/img/temp-1.jpg" />
-                                    <p></p>
-                                    <i></i>
-                                </div>
-                                <h3>活动主题活动主题活动主题活动主题</h3>
-                                <div class="other">
-                                    <label>6000人正在观看直播</label>
-                                    <span class="status living">直播中</span>
-                                </div>
-                            </li>
-                            <li class="app-button" data-target="act" data-target-args='{"id":1}'>
-                                <div class="img">
-                                    <img src="http://test.instore.com.cn/img/temp-2.jpg" />
-                                    <p></p>
-                                    <i></i>
-                                </div>
-                                <h3>活动主题活动主题活动主题活动主题</h3>
-                                <div class="other">
-                                    <label>6000人已预约</label>
-                                    <span class="status ordering">预约中</span>
-                                </div>
-                            </li>
-                            <li class="app-button" data-target="act" data-target-args='{"id":1}'>
-                                <div class="img">
-                                    <img src="http://test.instore.com.cn/img/temp-2.jpg" />
-                                    <p></p>
-                                    <i></i>
-                                </div>
-                                <h3>活动主题活动主题活动主题活动主题</h3>
-                                <div class="other">
-                                    <label>6000人</label>
-                                    <span class="status playback">回放</span>
-                                </div>
-                            </li>
-                        </ul>
+                        <ul id="act-list"></ul>
                     </div>
                 </div>
                 <!--优惠-->
                 <div class="tab page_discount">
                     <div class="scroller" id="page_discount">
-                        <ul>
-                            <li class="app-button" data-target="discount" data-target-args='{"id":1}'>
-                                <div class="img"><img src="http://test.instore.com.cn/img/temp-1.jpg" /></div>
-                                <div class="title">优惠主题名称优惠主题名称优惠主题名称</div>
-                            </li>
-                            <li class="app-button" data-target="discount" data-target-args='{"id":1}'>
-                                <div class="img"><img src="http://test.instore.com.cn/img/temp-2.jpg" /></div>
-                                <div class="title">优惠主题名称优惠主题名称优惠主题名称</div>
-                            </li>
-                        </ul>
+                        <ul id="discount-list"></ul>
                     </div>
                 </div>
             </div>
@@ -201,123 +72,30 @@
     <div class="app-page" data-page="act">
         <div class="app-topbar">
             <div class="app-button left" data-back></div>
-            <div class="app-title" id="brand-name">活动标题</div>
+            <div class="app-title" id="act-name"></div>
         </div>
-        <div class="app-content act-content" id="act-content">
-            <div class="img"><img src="http://test.instore.com.cn/img/temp-1.jpg" /></div>
-            <div class="info">
-                <div class="status">
-                    <span>预约中</span>
-                    <label>600人已预约</label>
-                </div>
-                <p>
-                    <span>开始时间</span> 07月21日10:00
-                    <br />
-                    <span>结束时间</span> 07月21日10:00
-                </p>
-            </div>
-            <div class="car">
-                <span>参与车型</span> 东风日产楼兰
-            </div>
-            <div class="intro">
-                <strong>活动简介</strong>
-                <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
-            </div>
-            <div class="button app-button" data-target="order" data-target-args='{"id":1}'>
-                立即预约
-            </div>
-        </div>
+        <div class="app-content act-content" id="act-content"></div>
     </div>
     <div class="app-page" data-page="discount">
         <div class="app-topbar">
             <div class="app-button left" data-back></div>
-            <div class="app-title" id="brand-name">优惠主题名称</div>
+            <div class="app-title" id="discount-name"></div>
         </div>
-        <div class="app-content discount-content" id="discount-content">
-            <div class="img"><img src="http://test.instore.com.cn/img/temp-2.jpg" /></div>
-            <div class="info">
-                <p>
-                    <span>开始时间</span> 07月21日10:00
-                    <br />
-                    <span>结束时间</span> 07月21日10:00
-                </p>
-            </div>
-            <div class="intro">
-                <strong>优惠简介</strong>
-                <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
-            </div>
-            <div class="button app-button" data-target="order" data-target-args='{"id":1}'>
-                立即预约
-            </div>
-        </div>
+        <div class="app-content discount-content" id="discount-content"></div>
     </div>
     <div class="app-page" data-page="order">
         <div class="app-topbar">
             <div class="app-button left" data-back></div>
             <div class="app-title" id="brand-name">预约成功</div>
         </div>
-        <div class="app-content order-content" id="order-content">
-            <div class="success-icon"></div>
-            <h2>您已成功预约了1103</h2>
-            <p>开播前会有短信提醒您参加<br />请留意您的短信通知！</p>
-            <div class="line"></div>
-            <div class="other">
-                门店：广州雪弗兰黄埔大道店<br />
-                <span>时间：2017/07/23 13:00</span>
-            </div>
-        </div>
+        <div class="app-content order-content" id="order-content"></div>
     </div>
-    <div class="app-page" data-page="user">
+    <div class="app-page" data-page="sale">
         <div class="app-topbar">
             <div class="app-button left" data-back></div>
             <div class="app-title">个人主页</div>
         </div>
-        <div class="app-content user-content" id="user-content">
-            <div class="header">
-                <div class="img"><img src="http://test.instore.com.cn/img/user-1.jpg" /></div>
-                <h2>销售姓名</h2>
-                <div class="stars"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
-                <div class="info">
-                    <span>直播 10</span>
-                    <span>观众 263</span>
-                    <span>被赞 3652</span>
-                </div>
-            </div>
-            <div class="info-list">
-                <ul>
-                    <li>
-                        <span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
-                        <label>男</label>
-                    </li>
-                    <li>
-                        <span>手机号码：</span>
-                        <a href="tel:13688888888" class="contact">联系销售</a>
-                        <label class="tel">13688888888</label>
-                    </li>
-                    <li>
-                        <span>个人简介：</span>
-                        <label class="tips">TA好像忘记写签名了...</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="shop-list">
-                <ul>
-                    <li>
-                        <a href="#" class="app-button" data-target="shop" data-target-args='{"id":1}'>
-                            <span class="arrow-right"></span>
-                            <p>
-                                <strong>广汽丰田黄埔大道店</strong>
-                                <span class="mark">4S</span>
-                                <label class="address">广州市天河区黄埔大道196号广州市天河区黄埔大道</label>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="button app-button" id="btnSetRemind">
-                TA已下线，设置上线提醒
-            </div>
-        </div>
+        <div class="app-content sale-content" id="sale-content"></div>
     </div>
 
     <div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>
